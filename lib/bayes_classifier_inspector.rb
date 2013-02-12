@@ -29,8 +29,8 @@ module BayesClassifierInspector
 
   def evaluate(test_docs)
     test_docs.each do |test_doc|
-      puts "#{classify(test_doc)[:class]}:\t #{make_excerpts([test_doc], 40)}"
-      puts "\t\t#{classify_with_probability(test_doc)}"
+      puts "#{make_excerpts([test_doc], 40)}"
+      puts "\t-> #{classify(test_doc)[:class]}\t#{classify_with_probability(test_doc)}"
     end
   end
 end

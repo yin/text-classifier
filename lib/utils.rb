@@ -1,6 +1,9 @@
 def readdoc(path)
   example_dir = './examples'
-  IO.readlines(example_dir + '/' + path).join ''
+  doc = IO.readlines(example_dir + '/' + path).join('')
+  # This is a hack to overcome Ruvy problems with encoding
+  doc.encode!('UTF-16', 'UTF-8', :invalid => :replace)
+  doc.encode!('UTF-8', 'UTF-16', :invalid => :replace)
 end
 
 def make_excerpts(docs, max_len = 25)
