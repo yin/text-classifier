@@ -1,0 +1,410 @@
+Large Hadron Collider
+From Wikipedia, the free encyclopedia
+Jump to: navigation, search
+"LHC" redirects here. For other uses, see LHC (disambiguation).
+
+Coordinates: 46°14′N 06°03′E
+Beyond the Standard Model
+CMS Higgs-event.jpg
+Simulated Large Hadron Collider CMS particle detector data depicting a Higgs boson produced by colliding protons decaying into hadron jets and electrons
+Standard Model
+Evidence[show]
+Theories[show]
+Supersymmetry[show]
+Quantum gravity[show]
+Experiments[hide]
+
+    Gran Sasso
+    INO
+    LHC
+    SNO
+    Super-K
+    Tevatron
+
+    v
+    t
+    e
+
+Large Hadron Collider
+(LHC) LHC.svg
+LHC experiments
+ATLAS 	A Toroidal LHC Apparatus
+CMS 	Compact Muon Solenoid
+LHCb 	LHC-beauty
+ALICE 	A Large Ion Collider Experiment
+TOTEM 	Total Cross Section, Elastic Scattering and Diffraction Dissociation
+LHCf 	LHC-forward
+MoEDAL 	Monopole and Exotics Detector At the LHC
+LHC preaccelerators
+p and Pb 	Linear accelerators for protons (Linac 2) and Lead (Linac 3)
+(not marked) 	Proton Synchrotron Booster
+PS 	Proton Synchrotron
+SPS 	Super Proton Synchrotron
+Hadron colliders Intersecting Storage Rings 	CERN, 1971–1984
+Super Proton Synchrotron 	CERN, 1981–1984
+ISABELLE 	BNL, cancelled in 1983
+Tevatron 	Fermilab, 1987–2011
+Relativistic Heavy Ion Collider 	BNL, 2000–present
+Superconducting Super Collider 	Cancelled in 1993
+Large Hadron Collider 	CERN, 2009–present
+Super Large Hadron Collider 	Proposed, CERN, 2019–
+Very Large Hadron Collider 	Theoretical
+
+The Large Hadron Collider (LHC) is the world's largest and highest-energy particle accelerator. It was built by the European Organization for Nuclear Research (CERN) from 1998 to 2008, with the aim of allowing physicists to test the predictions of different theories of particle physics and high-energy physics, and particularly prove or disprove the existence of the hypothesized Higgs boson[1] and of the large family of new particles predicted by supersymmetric theories.[2] The LHC is expected to address some of the still unsolved questions of physics, advancing human understanding of Physical laws. It contains six detectors each designed for specific kinds of exploration.
+
+The LHC was built in collaboration with over 10,000 scientists and engineers from over 100 countries, as well as hundreds of universities and laboratories.[3] It lies in a tunnel 27 kilometres (17 mi) in circumference, as deep as 175 metres (574 ft) beneath the Franco-Swiss border near Geneva, Switzerland.
+
+As of 2012, the LHC remains one of the largest and most complex experimental facilities ever built. Its synchrotron is designed to initially collide two opposing particle beams of either protons at up to 7 teraelectronvolts (7 TeV or 1.12 microjoules) per nucleon, or lead nuclei at an energy of 574 TeV (92.0 µJ) per nucleus (2.76 TeV per nucleon-pair),[4][5] with energies to be doubled to around 14 TeV collision energy - more than ten times any predecessor collider - by around 2014. Collision data was also anticipated to be produced at an unprecedented rate of tens of petabytes per year, to be analysed by a grid-based computer network infrastructure connecting 140 computing centers in 35 countries[6][7] (by 2012 the LHC Computing Grid was the world's largest computing grid, comprising over 170 computing facilities in a worldwide network across 36 countries[8][9][10]).
+
+The LHC went live on 10 September 2008, with proton beams successfully circulated in the main ring of the LHC for the first time,[11] but 9 days later a magnet quench incident resulting from an electrical fault caused operations to halt for 14 months following a helium gas explosion that damaged over 50 superconducting magnets and their mountings, and contaminated the vacuum pipe.[12][13] On November 20th 2009 proton beams were successfully circulated again,[14][15] with the first recorded proton–proton collisions occurring 3 days later at the injection energy of 450 GeV per beam.[16] On March 30th 2010, the first collisions took place between two 3.5 TeV beams, setting the current world record for the highest-energy man-made particle collisions,[17] and the LHC began its planned research program.
+
+By November 2012, the LHC had discovered two previously unobserved particles (the χb (3P) bottomonium state and a massive boson awaiting identification but suspected to be a Higgs boson), created a quark–gluon plasma, and recorded the first observations of the very rare decay of the Bs meson into two muons (Bs0 → μ+μ-) (a major test of supersymmetry).
+
+The LHC operated at 4 TeV per beam until the end of 2012, 0.5 TeV higher than in 2010 and 2011.[18] It will operate for two months in 2013 colliding protons with lead nuclei, and go into shutdown for upgrades to increase beam energy to 6.5 TeV per beam, with reopening planned for early 2015.[19]
+Contents
+
+    1 Etymology
+    2 Purpose
+    3 Design
+        3.1 Detectors
+        3.2 Computing and analysis facilities
+    4 Operational history
+        4.1 Inaugural tests
+        4.2 2008 quench incident
+        4.3 Full operation
+        4.4 Timeline of operations
+    5 Findings
+    6 Proposed upgrade
+    7 Cost
+    8 Computing resources
+    9 Safety of particle collisions
+    10 Operational challenges
+    11 Construction accidents and delays
+    12 Popular culture
+    13 See also
+    14 References
+    15 External links
+
+1 Etymology
+Main articles: Hadron and Collider
+
+The term hadron refers to composite particles composed of quarks held together by the strong force (as atoms and molecules are held together by the electromagnetic force). The best-known hadrons are protons and neutrons; hadrons also include mesons such as the pion and kaon, which were discovered during cosmic ray experiments in the late 1940s and early 1950s.
+
+A collider is a type of a particle accelerator with directed beams of elementary particles. In particle physics colliders are used as a research tool: they accelerate particles to very high kinetic energies and let them impact other particles. Analysis of the byproducts of these collisions gives scientists good evidence of the structure of the subatomic world and the laws of nature governing it. Many of these byproducts are produced only by high energy collisions, and they decay after very short periods of time. Thus many of them are hard or impossible to study in other ways.
+2 Purpose
+A simulated event in the CMS detector, featuring the appearance of the Higgs boson
+
+Physicists hope that the LHC will help answer some of the fundamental open questions in physics, concerning the basic laws governing the interactions and forces among the elementary objects, the deep structure of space and time, and in particular the interrelation between quantum mechanics and general relativity, where current theories and knowledge are unclear or break down altogether. Data are also needed from high energy particle experiments to suggest which versions of current scientific models are more likely to be correct – in particular to choose between the Standard Model and Higgsless models and to validate their predictions and allow further theoretical development. Many theorists expect new physics beyond the Standard Model to emerge at the TeV energy level, as the Standard Model appears to be unsatisfactory. Issues possibly to be explored by LHC collisions include:[20]
+
+        Are the masses of elementary particles actually generated by the Higgs mechanism via electroweak symmetry breaking?[21] It is expected that the collider will either demonstrate or rule out the existence of the elusive Higgs boson, thereby allowing physicists to consider whether the Standard Model or its Higgsless models alternatives are more likely to be correct.[22][23][24]
+        Is supersymmetry, an extension of the Standard Model and Poincaré symmetry, realised in nature, implying that all known particles have supersymmetric partners?[25][26][27]
+        Are there extra dimensions,[28] as predicted by various models based on string theory, and can we detect them?[29]
+        What is the nature of the dark matter that appears to account for 23% of the mass-energy of the universe?
+
+Other open questions that may be explored using high energy particle collisions:
+
+        It is already known that electromagnetism and the weak nuclear force are different manifestations of a single force called the electroweak force. The LHC may clarify whether the electroweak force and the strong nuclear force are similarly just different manifestations of one universal unified force, as predicted by various Grand Unification Theories.
+        Why is the fourth fundamental force (gravity) so many orders of magnitude weaker than the other three fundamental forces? See also Hierarchy problem.
+        Are there additional sources of quark flavour mixing, beyond those already predicted within the Standard Model?
+        Why are there apparent violations of the symmetry between matter and antimatter? See also CP violation.
+        What are the nature and properties of quark-gluon plasma, believed to have existed in the early universe and in certain compact and strange astronomical objects today? This will be investigated by heavy ion collisions in ALICE.
+
+3 Design
+A Feynman diagram of one way the Higgs boson may be produced at the LHC. Here, two quarks each emit a W or Z boson, which combine to make a neutral Higgs.
+Map of the Large Hadron Collider at CERN
+
+The LHC is the world's largest and highest-energy particle accelerator.[4][30] The collider is contained in a circular tunnel, with a circumference of 27 kilometres (17 mi), at a depth ranging from 50 to 175 metres (160 to 574 ft) underground.
+
+The 3.8-metre (12 ft) wide concrete-lined tunnel, constructed between 1983 and 1988, was formerly used to house the Large Electron–Positron Collider.[31] It crosses the border between Switzerland and France at four points, with most of it in France. Surface buildings hold ancillary equipment such as compressors, ventilation equipment, control electronics and refrigeration plants.
+
+The collider tunnel contains two adjacent parallel beamlines (or beam pipes) that intersect at four points, each containing a proton beam, which travel in opposite directions around the ring. Some 1,232 dipole magnets keep the beams on their circular path, while an additional 392 quadrupole magnets are used to keep the beams focused, in order to maximize the chances of interaction between the particles in the four intersection points, where the two beams will cross. In total, over 1,600 superconducting magnets are installed, with most weighing over 27 tonnes. Approximately 96 tonnes of liquid helium is needed to keep the magnets, made of copper-clad niobium-titanium, at their operating temperature of 1.9 K (−271.25 °C), making the LHC the largest cryogenic facility in the world at liquid helium temperature.
+Superconducting quadrupole electromagnets are used to direct the beams to four intersection points, where interactions between accelerated protons will take place.
+
+When running at full design power of 7 TeV per beam, once or twice a day, as the protons are accelerated from 450 GeV to 7 TeV, the field of the superconducting dipole magnets will be increased from 0.54 to 8.3 teslas (T). The protons will each have an energy of 7 TeV, giving a total collision energy of 14 TeV. At this energy the protons have a Lorentz factor of about 7,500 and move at about 0.999999991 c, or about 3 metres per second slower than the speed of light (c).[32] It will take less than 90 microseconds (μs) for a proton to travel once around the main ring – a speed of about 11,000 revolutions per second. Rather than continuous beams, the protons will be bunched together, into 2,808 bunches, 115 billion protons in each bunch so that interactions between the two beams will take place at discrete intervals never shorter than 25 nanoseconds (ns) apart. However it will be operated with fewer bunches when it is first commissioned, giving it a bunch crossing interval of 75 ns.[33] The design luminosity of the LHC is 1034 cm−2s−1, providing a bunch collision rate of 40 MHz.[34]
+
+Prior to being injected into the main accelerator, the particles are prepared by a series of systems that successively increase their energy. The first system is the linear particle accelerator LINAC 2 generating 50-MeV protons, which feeds the Proton Synchrotron Booster (PSB). There the protons are accelerated to 1.4 GeV and injected into the Proton Synchrotron (PS), where they are accelerated to 26 GeV. Finally the Super Proton Synchrotron (SPS) is used to further increase their energy to 450 GeV before they are at last injected (over a period of 20 minutes) into the main ring. Here the proton bunches are accumulated, accelerated (over a period of 20 minutes) to their peak 7-TeV energy, and finally circulated for 10 to 24 hours while collisions occur at the four intersection points.[35]
+CMS detector for LHC
+
+The LHC physics program is mainly based on proton–proton collisions. However, shorter running periods, typically one month per year, with heavy-ion collisions are included in the program. While lighter ions are considered as well, the baseline scheme deals with lead ions[36] (see A Large Ion Collider Experiment). The lead ions will be first accelerated by the linear accelerator LINAC 3, and the Low-Energy Ion Ring (LEIR) will be used as an ion storage and cooler unit. The ions will then be further accelerated by the PS and SPS before being injected into LHC ring, where they will reach an energy of 2.76 TeV per nucleon (or 575 TeV per ion), higher than the energies reached by the Relativistic Heavy Ion Collider. The aim of the heavy-ion program is to investigate quark–gluon plasma, which existed in the early universe.
+3.1 Detectors
+See also: List of Large Hadron Collider experiments
+
+Six detectors have been constructed at the LHC, located underground in large caverns excavated at the LHC's intersection points. Two of them, the ATLAS experiment and the Compact Muon Solenoid (CMS), are large, general purpose particle detectors.[30] A Large Ion Collider Experiment (ALICE) and LHCb, have more specific roles and the last two, TOTEM and LHCf, are very much smaller and are for very specialized research. The BBC's summary of the main detectors is:[37]
+Detector 	Description
+ATLAS 	One of two general purpose detectors. ATLAS will be used to look for signs of new physics, including the origins of mass and extra dimensions.
+CMS 	The other general purpose detector will, like ATLAS, hunt for the Higgs boson and look for clues to the nature of dark matter.
+ALICE 	ALICE is studying a "fluid" form of matter called quark–gluon plasma that existed shortly after the Big Bang.
+LHCb 	Equal amounts of matter and antimatter were created in the Big Bang. LHCb will try to investigate what happened to the "missing" antimatter.
+3.2 Computing and analysis facilities
+Main article: LHC Computing Grid
+
+The LHC Computing Grid is an international collaborative project that consists of a grid-based computer network infrastructure connecting 140 computing centers in 35 countries (over 170 in 36 countries as of 2012). It was designed by CERN to handle the significant volume of data produced by LHC experiments.[6][7]
+
+By 2012 data from over 300 trillion (3 x 1014) LHC proton-proton collisions had been analyzed,[8] LHC collision data was being produced at approximately 25 petabytes per year, and the LHC Computing Grid had become the world's largest computing grid (as of 2012), comprising over 170 computing facilities in a worldwide network across 36 countries.[8][9][10]
+4 Operational history
+4.1 Inaugural tests
+
+The first beam was circulated through the collider on the morning of 10 September 2008.[37] CERN successfully fired the protons around the tunnel in stages, three kilometres at a time. The particles were fired in a clockwise direction into the accelerator and successfully steered around it at 10:28 local time.[38] The LHC successfully completed its major test: after a series of trial runs, two white dots flashed on a computer screen showing the protons travelled the full length of the collider. It took less than one hour to guide the stream of particles around its inaugural circuit.[39] CERN next successfully sent a beam of protons in a counterclockwise direction, taking slightly longer at one and a half hours due to a problem with the cryogenics, with the full circuit being completed at 14:59.
+4.2 2008 quench incident
+
+On 19 September 2008, a magnet quench occurred in about 100 bending magnets in sectors 3 and 4, causing a loss of approximately six tonnes of liquid helium, which was vented into the tunnel, and a temperature rise of about 100 degrees celsius in some of the affected magnets. The ensuing helium gas explosion damaged over 50 superconducting magnets and their mountings, and contaminated the vacuum pipe, which also lost vacuum conditions.[12][13][40] Shortly after the incident CERN reported that the most likely cause of the problem was a faulty electrical connection between two magnets, and that – due to the time needed to warm up the affected sectors and then cool them back down to operating temperature – it would take at least two months to fix.[41] Subsequently, CERN released a preliminary analysis of the incident on 16 October 2008,[42] and a more detailed one on 5 December 2008.[43] Both analyses confirmed that the incident was indeed initiated by a faulty electrical connection. A total of 53 magnets were damaged in the incident and were repaired or replaced during the winter shutdown.[44]
+
+In the original timeline of the LHC commissioning, the first "modest" high-energy collisions at a center-of-mass energy of 900 GeV were expected to take place before the end of September 2008, and the LHC was expected to be operating at 10 TeV by the end of 2008.[45] However, due to the delay caused by the above-mentioned incident, the collider was not operational until November 2009.[46] Despite the delay, LHC was officially inaugurated on 21 October 2008, in the presence of political leaders, science ministers from CERN's 20 Member States, CERN officials, and members of the worldwide scientific community.[47]
+
+Most of 2009 was spent on repairs and reviews from the damage caused by the quench incident, along with two further vacuum leaks identified in July 2009 which pushed the start of operations to November of that year.[48]
+4.3 Full operation
+
+On 20 November 2009, low-energy beams circulated in the tunnel for the first time since the incident, and shortly after, on 30 November, the LHC achieved 1.18 TeV per beam to become the world's highest-energy particle accelerator, beating the Tevatron's previous record of 0.98 TeV per beam held for eight years.[49]
+
+The early part of 2010 saw the continued ramp-up of beam in energies and early physics experiments towards 3.5 TeV per beam and on 30 March 2010, LHC set the present record for high-energy collisions by colliding proton beams at a combined energy level of 7 TeV. The attempt was the third that day, after two unsuccessful attempts in which the protons had to be "dumped" from the collider and new beams had to be injected.[50] This also marked the start of its main research program.
+
+The first proton run ended on 4 November 2010. A run with lead ions started on 8 November 2010, and ended on 6 December 2010,[51] allowing the ALICE experiment to study matter under extreme conditions similar to those shortly after the Big Bang.[52]
+
+CERN has declared that the LHC will run through to the end of 2012, with a short technical stop at the end of 2011. The energy for 2011 was 3.5 TeV per beam, whereas for 2012 it was decided to run the LHC at 4 TeV per beam.[18] In 2013 the LHC will go into a long shutdown to prepare for higher-energy running starting in 2015.[19]
+4.4 Timeline of operations
+Date 	Event
+10 Sep 2008 	CERN successfully fired the first protons around the entire tunnel circuit in stages.
+19 Sep 2008 	Magnetic quench occurred in about 100 bending magnets in sectors 3 and 4, causing a loss of approximately 6 tonnes of liquid helium.
+30 Sep 2008 	First "modest" high-energy collisions planned but postponed due to accident.
+16 Oct 2008 	CERN released a preliminary analysis of the accident.
+21 Oct 2008 	Official inauguration.
+ 5 Dec 2008 	CERN released detailed analysis.
+20 Nov 2009 	Low-energy beams circulated in the tunnel for the first time since the accident.[53]
+23 Nov 2009 	First particle collisions in all four detectors at 450 GeV.
+30 Nov 2009 	LHC becomes the world's highest-energy particle accelerator achieving 1.18 TeV per beam, beating the Tevatron's previous record of 0.98 TeV per beam held for eight years.[49]
+15 Dec 2009 	First scientific results, covering 284 collisions in the ALICE detector.[54]
+early Feb 2010 	First proton-proton collisions beyond FermiLab's energies, published by the CMS team.[55]
+28 Feb 2010 	The LHC continues operations ramping energies to run at 3.5 TeV for 18 months to two years, after which it will be shut down to prepare for the 14 TeV collisions (7 TeV per beam).[56]
+30 Mar 2010 	The two beams collided at 7 TeV (3.5 TeV per beam) in the LHC at 13:06 CEST, marking the start of the LHC research program.
+8 Nov 2010 	Start of the first run with lead ions.
+6 Dec 2010 	End of the run with lead ions. Shutdown until early 2011.
+13 Mar 2011 	Beginning of the 2011 run with proton beams.[57]
+21 Apr 2011 	LHC becomes the world's highest-luminosity hadron accelerator achieving a peak luminosity of 4.67·1032 cm−2s−1, beating the Tevatron's previous record of 4·1032 cm−2s−1 held for one year.[58]
+24 May 2011 	Quark–gluon plasma achieved.[59]
+17 Jun 2011 	The high luminosity experiments ATLAS and CMS reach 1 fb-1 of collected data.[60]
+14 Oct 2011 	LHCb reaches 1 fb−1 of collected data.[61]
+23 Oct 2011 	The high luminosity experiments ATLAS and CMS reach 5 fb−1 of collected data.
+22 Dec 2011 	First new particle discovery, the χb (3P) bottomonium state, observed during Lead Ion collisions.[62]
+5 Apr 2012 	First collisions with stable beams in 2012 after the winter shutdown. The energy is increased to 4 TeV per beam (8 TeV in collisions).[63]
+4 July 2012 	Second new particle discovery, a new boson observed that is "consistent with" the theorized Higgs boson. (Further tests are required to confirm whether the new particle is or is not a Higgs boson, although widely believed to be the former)
+8 Nov 2012 	First observation of the very rare decay of the Bs meson into two muons (Bs0 → μ+-), a major test of supersymmetry theories,[64] shows results at 3.5 sigma that match the Standard Model rather than many of its supersymmetrical variants.
+5 Findings
+
+CERN scientists estimated that, if the Standard Model is correct, a single Higgs boson may be produced every few hours, and that over a few years enough data to confirm or disprove the Higgs boson unambiguously and to obtain sufficient results concerning supersymmetric particles would be gathered to draw meaningful conclusions.[4] On the other hand, some extensions of the Standard Model predict additional particles, such as the heavy W' and Z' gauge bosons, whose existence might already be probed after a few months of data collection.[65]
+
+The first physics results from the LHC, involving 284 collisions which took place in the ALICE detector, were reported on 15 December 2009.[54] The results of the first proton–proton collisions at energies higher than Fermilab's Tevatron proton–antiproton collisions were published by the CMS collaboration in early February 2010, yielding greater-than-predicted charged-hadron production.[55]
+
+After the first year of data collection, the LHC experimental collaborations started to release their preliminary results concerning searches for new physics beyond the Standard Model in proton-proton collisions.[66][67][68][69] No evidence of new particles was detected in the 2010 data. As a result, bounds were set on the allowed parameter space of various extensions of the Standard Model, such as models with large extra dimensions, constrained versions of the Minimal Supersymmetric Standard Model, and others.[70][71][72]
+
+On 24 May 2011, it was reported that quark–gluon plasma (the densest matter besides black holes) has been created in the LHC.[59]
+
+Between July and August 2011, results of searches for the Higgs boson and for exotic particles, based on the data collected during the first half of the 2011 run, were presented in conferences in Grenoble[73] and Mumbai.[74] In the latter conference it was reported that, despite hints of a Higgs signal in earlier data, ATLAS and CMS exclude with 95% confidence level (using the CLs method) the existence of a Higgs boson with the properties predicted by the Standard Model over most of the mass region between 145 and 466 GeV.[75] The searches for new particles did not yield signals either, allowing to further constrain the parameter space of various extensions of the Standard Model, including its supersymmetric extensions.[76][77]
+
+On 13 December 2011, CERN reported that the Standard Model Higgs boson, if it exists, is most likely to have a mass constrained to the range 115-130 GeV. Both the CMS and ATLAS detectors have also shown intensity peaks in the 124–125 GeV range, consistent with either background noise or the observation of the Higgs boson.[78]
+
+On 22 December 2011, it was reported that a new particle had been observed, the χb (3P) bottomonium state.[62]
+
+On 4 July 2012, both the CMS and ATLAS teams announced the discovery of a boson in the mass region around 125-126 GeV, with a statistical significance at the level of 5 sigma. This meets the formal level required to announce a new particle which is "consistent with" the Higgs boson, but scientists are cautious as to whether it is formally identified as actually being the Higgs boson, pending further analysis.[79]
+
+On 8 November 2012, the LHCb team reported on an experiment seen as a "golden" test of supersymmetry theories in physics,[64] by measuring the very rare decay of the Bs meson into two muons (Bs0 → μ+μ-). The results, which match those predicted by the non-supersymmetrical Standard Model rather than the predictions of many branches of supersymmetry, show the decays are less common than some forms of supersymmetry predict, though could still match the predictions of other versions of supersymmetry theory. The results as initially drafted are stated to be short of proof but at a relatively high 3.5 sigma level of significance.[80]
+6 Proposed upgrade
+Main article: Super Large Hadron Collider
+
+After some years of running, any particle physics experiment typically begins to suffer from diminishing returns: as the key results reachable by the device begin to be completed, later years of operation discover proportionately less than earlier years. A common outcome is to upgrade the devices involved, typically in energy, in luminosity, or in terms of improved detectors. A luminosity upgrade of the LHC, called the Super LHC, has been proposed,[81] to be made in 2018 after ten years of operation.
+
+The optimal path for the LHC luminosity upgrade includes an increase in the beam current (i.e. the number of protons in the beams) and the modification of the two high-luminosity interaction regions, ATLAS and CMS. To achieve these increases, the energy of the beams at the point that they are injected into the (Super) LHC should also be increased to 1 TeV. This will require an upgrade of the full pre-injector system, the needed changes in the Super Proton Synchrotron being the most expensive. Currently the collaborative research effort of LHC Accelerator Research Program, LARP is conducting research into how to achieve these goals.[82]
+7 Cost
+See also: List of megaprojects
+
+With a budget of 7.5 billion euros (approx. $9bn or £6.19bn as of Jun 2010), the LHC is one of the most expensive scientific instruments[83] ever built.[84] The total cost of the project is expected to be of the order of 4.6bn Swiss francs (approx. $4.4bn, €3.1bn, or £2.8bn as of Jan 2010) for the accelerator and SFr 1.16bn (approx. $1.1bn, €0.8bn, or £0.7bn as of Jan 2010) for the CERN contribution to the experiments.[85]
+
+The construction of LHC was approved in 1995 with a budget of SFr 2.6bn, with another SFr 210M towards the experiments. However, cost overruns, estimated in a major review in 2001 at around SFr 480M for the accelerator, and SFr 50M for the experiments, along with a reduction in CERN's budget, pushed the completion date from 2005 to April 2007.[86] The superconducting magnets were responsible for SFr 180M of the cost increase. There were also further costs and delays due to engineering difficulties encountered while building the underground cavern for the Compact Muon Solenoid,[87] and also due to faulty parts provided by Fermilab.[88] Due to lower electricity costs during the summer, it is expected that the LHC will normally not operate over the winter months,[89] although an exception was made to make up for the 2008 start-up delays over the 2009/10 winter.
+8 Computing resources
+
+Data produced by LHC, as well as LHC-related simulation, was estimated at approximately 15 petabytes per year (max throughput while running not stated).[90]
+
+The LHC Computing Grid[91] was constructed to handle the massive amounts of data produced. It incorporated both private fiber optic cable links and existing high-speed portions of the public Internet, enabling data transfer from CERN to academic institutions around the world.[92]
+
+The Open Science Grid is used as the primary infrastructure in the United States, and also as part of an interoperable federation with the LHC Computing Grid.
+
+The distributed computing project LHC@home was started to support the construction and calibration of the LHC. The project uses the BOINC platform, enabling anybody with an Internet connection and a computer running Mac OSX, Windows or Linux,[93] to use their computer's idle time to simulate how particles will travel in the tunnel. With this information, the scientists will be able to determine how the magnets should be calibrated to gain the most stable "orbit" of the beams in the ring.[94] In August 2011, a second application went live (Test4Theory) which performs simulations against which to compare actual test data, to determine confidence levels of the results.
+9 Safety of particle collisions
+Main article: Safety of particle collisions at the Large Hadron Collider
+
+The experiments at the Large Hadron Collider sparked fears among the public that the particle collisions might produce doomsday phenomena, involving the production of stable microscopic black holes or the creation of hypothetical particles called strangelets.[95] Two CERN-commissioned safety reviews examined these concerns and concluded that the experiments at the LHC present no danger and that there is no reason for concern,[96][97][98] a conclusion expressly endorsed by the American Physical Society.[99]
+10 Operational challenges
+
+The size of the LHC constitutes an exceptional engineering challenge with unique operational issues on account of the amount of energy stored in the magnets and the beams.[35][100] While operating, the total energy stored in the magnets is 10 GJ (2,400 kilograms of TNT) and the total energy carried by the two beams reaches 724 MJ (173 kilograms of TNT).[101]
+
+Loss of only one ten-millionth part (10−7) of the beam is sufficient to quench a superconducting magnet, while the beam dump must absorb 362 MJ (87 kilograms of TNT) for each of the two beams. These energies are carried by very little matter: under nominal operating conditions (2,808 bunches per beam, 1.15×1011 protons per bunch), the beam pipes contain 1.0×10−9 gram of hydrogen, which, in standard conditions for temperature and pressure, would fill the volume of one grain of fine sand.
+11 Construction accidents and delays
+	Wikinews has related news: CERN says repairs to LHC particle accelerator to cost €16.6 million
+
+    On 25 October 2005, José Pereira Lages, a technician, was killed in the LHC when a switchgear that was being transported fell on him.[102]
+    On 27 March 2007 a cryogenic magnet support broke during a pressure test involving one of the LHC's inner triplet (focusing quadrupole) magnet assemblies, provided by Fermilab and KEK. No one was injured. Fermilab director Pier Oddone stated "In this case we are dumbfounded that we missed some very simple balance of forces". This fault had been present in the original design, and remained during four engineering reviews over the following years.[103] Analysis revealed that its design, made as thin as possible for better insulation, was not strong enough to withstand the forces generated during pressure testing. Details are available in a statement from Fermilab, with which CERN is in agreement.[104][105] Repairing the broken magnet and reinforcing the eight identical assemblies used by LHC delayed the startup date, then planned for November 2007.
+    Problems occurred on 19 September 2008 during powering tests of the main dipole circuit, when an electrical fault in the bus between magnets caused a rupture and a leak of six tonnes of liquid helium. The operation was delayed for several months.[106] It is currently believed that a faulty electrical connection between two magnets caused an arc, which compromised the liquid-helium containment. Once the cooling layer was broken, the helium flooded the surrounding vacuum layer with sufficient force to break 10-ton magnets from their mountings. The explosion also contaminated the proton tubes with soot.[43][107] This accident was thoroughly discussed in a 22 February 2010 Superconductor Science and Technology article by CERN physicist Lucio Rossi.[108]
+    Two vacuum leaks were identified in July 2009, and the start of operations was further postponed to mid-November 2009.[48]
+
+12 Popular culture
+
+The Large Hadron Collider gained a considerable amount of attention from outside the scientific community and its progress is followed by most popular science media. The LHC has also sparked the imaginations of authors of works of fiction, such as novels, TV series, and video games, although descriptions of what it is, how it works, and projected outcomes of the experiments are often only vaguely accurate, occasionally causing concern among the general public.
+
+The novel Angels & Demons, by Dan Brown, involves antimatter created at the LHC to be used in a weapon against the Vatican. In response CERN published a "Fact or Fiction?" page discussing the accuracy of the book's portrayal of the LHC, CERN, and particle physics in general.[109] The movie version of the book has footage filmed on-site at one of the experiments at the LHC; the director, Ron Howard, met with CERN experts in an effort to make the science in the story more accurate.[110]
+
+The novel FlashForward, by Robert J. Sawyer, involves the search for the Higgs boson at the LHC. CERN published a "Science and Fiction" page interviewing Sawyer and physicists about the book and the TV series based on it.[111]
+
+CERN employee Katherine McAlpine's "Large Hadron Rap"[112] surpassed 7 million YouTube views.[113][114] The band Les Horribles Cernettes was founded by female members of CERN. The name was chosen so to have the same initials as the LHC.[115][116]
+
+National Geographic's "World's Toughest Fixes," Season 2 (2010) Episode 6 "Atom Smasher" features the replacement of the last superconducting magnet section in the repair of the supercollider after the 2008 quench incident. The episode includes actual footage from the repair facility to the inside of the supercollider, and explanations of the function, engineering, and purpose of the LHC.[117]
+
+The Large Hadron Collider was the focus of the 2012 student film Decay, with the movie being filmed on location in CERN's maintenance tunnels.[118]
+13 See also
+Book icon 	
+
+    Book: Large Hadron Collider
+
+    Bose–Einstein statistics
+    Compact Linear Collider
+    International Linear Collider
+    List of accelerators in particle physics
+
+14 References
+
+    ^ "Missing Higgs". CERN. 2008. Retrieved 2008-10-10.
+    ^ "Towards a superforce". CERN. 2008. Retrieved 2008-10-10.
+    ^ Highfield, Roger (16 September 2008). "Large Hadron Collider: Thirteen ways to change the world". Telegraph (London). Retrieved 2008-10-10.
+    ^ a b c "What is LHCb". CERN FAQ. CERN Communication Group. January 2008. p. 44. Retrieved 2010-04-02.
+    ^ Amina Khan (31 March 2010). "Large Hadron Collider rewards scientists watching at Caltech". Los Angeles Times. Retrieved 2010-04-02.
+    ^ a b What is the Worldwide LHC Computing Grid?. CERN. January 2011. Retrieved 2012-01-11
+    ^ a b Welcome. CERN. January 2011. Retrieved 2012-01-11
+    ^ a b c Hunt for Higgs boson hits key decision point
+    ^ a b Worldwide LHC Computing Grid main page 14 November 2012: "[A] global collaboration of more than 170 computing centres in 36 countries ... to store, distribute and analyse the ~25 Petabytes (25 million Gigabytes) of data annually generated by the Large Hadron Collider"
+    ^ a b What is the Worldwide LHC Computing Grid? (Public 'About' page) 14 November 2012: "Currently WLCG is made up of more than 170 computing centers in 36 countries...The WLCG is now the world's largest computing grid"
+    ^ "First beam in the LHC – Accelerating science" (Press release). CERN Press Office. 10 September 2008. Retrieved 2008-10-09.
+    ^ a b Paul Rincon (23 September 2008). "Collider halted until next year". BBC News. Retrieved 2008-10-09.
+    ^ a b "Large Hadron Collider - Purdue Particle Physics". Physics.purdue.edu. Retrieved 2012-07-05.
+    ^ Large Hadron Collider.
+    ^ "The LHC is back" (Press release). CERN Press Office. 20 November 2009. Retrieved 2009-11-20.
+    ^ "Two circulating beams bring first collisions in the LHC" (Press release). CERN Press Office. 23 November 2009. Retrieved 2009-11-23.
+    ^ "CERN LHC sees high-energy success" (Press release). BBC News. 30 March 2010. Retrieved 2010-03-30.
+    ^ a b CERN Press Office (13 February 2012). "LHC to run at 4 TeV per beam in 2012". CERN.
+    ^ a b CERN Press Office (17 December 2012). "The first LHC protons run ends with new milestone". CERN.
+    ^ Brian Greene (11 September 2008). "The Origins of the Universe: A Crash Course". The New York Times. Retrieved 2009-04-17.
+    ^ "... in the public presentations of the aspiration of particle physics we hear too often that the goal of the LHC or a linear collider is to check off the last missing particle of the Standard Model, this year's Holy Grail of particle physics, the Higgs boson. The truth is much less boring than that! What we're trying to accomplish is much more exciting, and asking what the world would have been like without the Higgs mechanism is a way of getting at that excitement." – Chris Quigg (2005). "Nature's Greatest Puzzles". Econf C:l 040802 (1). arXiv:hep-ph/0502070.
+    ^ "Why the LHC". CERN. 2008. Retrieved 2009-09-28.
+    ^ "Zeroing in on the elusive Higgs boson". US Department of Energy. March 2001. Retrieved 2008-12-11.
+    ^ "Accordingly, in common with many of my colleagues, I think it highly likely that both the Higgs boson and other new phenomena will be found with the LHC."..."This mass threshold means, among other things, that something new—either a Higgs boson or other novel phenomena—is to be found when the LHC turns the thought experiment into a real one."Chris Quigg (February 2008). "The coming revolutions in particle physics". Scientific American. pp. 38–45. Retrieved 2009-09-28.
+    ^ Shaaban Khalil (2003). "Search for supersymmetry at LHC". Contemporary Physics 44 (3): 193–201. Bibcode 2003ConPh..44..193K. doi:10.1080/0010751031000077378.
+    ^ Alexander Belyaev (2009). "Supersymmetry status and phenomenology at the Large Hadron Collider". Pramana 72 (1): 143–160. Bibcode 2009Prama..72..143B. doi:10.1007/s12043-009-0012-0.
+    ^ Anil Ananthaswamy (11 November 2009). "In SUSY we trust: What the LHC is really looking for". New Scientist.
+    ^ Lisa Randall (2002). "Extra Dimensions and Warped Geometries". Science 296 (5572): 1422–1427. Bibcode 2002Sci...296.1422R. doi:10.1126/science.1072567. PMID 12029124.
+    ^ Panagiota Kanti (2009). "Black Holes at the LHC". Lecture Notes in Physics. Lecture Notes in Physics 769: 387–423. arXiv:0802.2218. doi:10.1007/978-3-540-88460-6_10. ISBN 978-3-540-88459-0.
+    ^ a b Joel Achenbach (March 2008). "The God Particle". National Geographic Magazine. Retrieved 2008-02-25.
+    ^ "The Z factory". CERN. 2008. Retrieved 2009-04-17.
+    ^ "LHC: How Fast do These Protons Go?". yogiblog. Retrieved 2008-10-29.
+    ^ "LHC commissioning with beam". CERN. Retrieved 2009-04-17.
+    ^ "Operational Experience of the ATLAS High Level Trigger with Single-Beam and Cosmic Rays" (PDF). Retrieved 2010-10-29.
+    ^ a b Jörg Wenninger (November 2007). "Operational challenges of the LHC" (PowerPoint). p. 53. Retrieved 2009-04-17.
+    ^ "Ions for LHC (I-LHC) Project". CERN. 1 November 2007. Retrieved 2009-04-17.
+    ^ a b Paul Rincon (10 September 2008). "'Big Bang' experiment starts well". BBC News. Retrieved 2009-04-17.
+    ^ "First beam in the LHC – Accelerating science" (Press release). CERN Press Office. 10 September 2008. Retrieved 2008-09-10.
+    ^ Mark Henderson (10 September 2008). "Scientists cheer as protons complete first circuit of Large Hadron Collider". Times Online (London). Retrieved 2008-10-06.
+    ^ "Interim Summary Report on the Analysis of the 19 September 2008 Incident at the LHC" (PDF). CERN. 15 October 2008. EDMS 973073. Retrieved 2009-09-28.
+    ^ "Incident in LHC sector 3–4" (Press release). CERN Press Office. 20 September 2008. Retrieved 2009-09-28.
+    ^ "CERN releases analysis of LHC incident" (Press release). CERN Press Office. 16 October 2008. Retrieved 2009-09-28.
+    ^ a b "LHC to restart in 2009" (Press release). CERN Press Office. 5 December 2008. Retrieved 2008-12-08.
+    ^ "Final LHC magnet goes underground" (Press release). CERN Press Office. 30 April 2009. Retrieved 2009-08-04.
+    ^ "CERN announces start-up date for LHC" (Press release). CERN Press Office. 7 August 2008.
+    ^ "CERN management confirms new LHC restart schedule" (Press release). CERN Press Office. 9 February 2009. Retrieved 2009-02-10.
+    ^ "CERN inaugurates the LHC" (Press release). CERN Press Office. 21 October 2008. Retrieved 2008-10-21.
+    ^ a b "News on the LHC". CERN. 16 July 2009. Retrieved 2009-09-28.
+    ^ a b "LHC sets new world record" (Press release). CERN. 30 November 2009. Retrieved 2010-03-02.
+    ^ "Big Bang Machine sets collision record". Associated Press. The Hindu. 30 March 2010.
+    ^ "CERN completes transition to lead-ion running at the LHC" (Press release). CERN. 8 November 2010. Retrieved 2010-11-08.
+    ^ "The Latest from the LHC : Last period of proton running for 2010. - CERN Bulletin". Cdsweb.cern.ch. 1 November 2010. Retrieved 2011-08-17.
+    ^ "The LHC is back" (Press release). CERN. 20 November 2009. Retrieved 2010-03-02.
+    ^ a b First Science Produced at LHC 2009-12-15
+    ^ a b V. Khachatryan et al. (CMS collaboration) (2010). "Transverse momentum and pseudorapidity distributions of charged hadrons in pp collisions at √s = 0.9 and 2.36 TeV". Journal of High Energy Physics 2010 (2): 1–35. arXiv:1002.0621. Bibcode 2010JHEP...02..041K. doi:10.1007/JHEP02(2010)041.
+    ^ "Large Hadron Collider to come back online after break". BBC News. 19 February 2010. Retrieved 2010-03-02.
+    ^ "LHC sees first stable-beam 3.5 TeV collisions of 2011". symmetry breaking. 13 March 2011. Retrieved 2011-03-15.
+    ^ CERN Press Office (22 April 2011). "LHC sets world record beam intensity". Press.web.cern.ch. Retrieved 2011-05-22.
+    ^ a b Densest Matter Created in Big-Bang Machine, National Geographic Daily News
+    ^ "LHC achieves 2011 data milestone". Press.web.cern.ch. 17 June 2011. Retrieved 2011-06-20.
+    ^ "One recorded inverse femtobarn".
+    ^ a b Jonathan Amos (22 December 2011). "LHC reports discovery of its first new particle". BBC News.
+    ^ "LHC physics data taking gets underway at new record collision energy of 8TeV". Press.web.cern.ch. 5 April 2012. Retrieved 2012-04-05.
+    ^ a b Ghosh, Pallab (12 Nov 2012). "Popular physics theory running out of hiding places". BBC News. Retrieved 14 November 2012.
+    ^ P. Rincon (17 May 2010). "LHC particle search 'nearing', says physicist". BBC News.
+    ^ V. Khachatryan et al. (CMS collaboration) (2011). "Search for Microscopic Black Hole Signatures at the Large Hadron Collider". Physics Letters B 697 (5): 434. arXiv:1012.3375. Bibcode 2011PhLB..697..434C. doi:10.1016/j.physletb.2011.02.032.
+    ^ V. Khachatryan et al. (CMS collaboration) (2011). "Search for Supersymmetry in pp Collisions at 7 TeV in Events with Jets and Missing Transverse Energy". Physics Letters B 698 (3): 196. arXiv:1101.1628. Bibcode 2011PhLB..698..196C. doi:10.1016/j.physletb.2011.03.021.
+    ^ G. Aad et al. (ATLAS collaboration) (2011). "Search for supersymmetry using final states with one lepton, jets, and missing transverse momentum with the ATLAS detector in √s = 7 TeV pp". Physical Review Letters 106 (13): 131802. arXiv:1102.2357. Bibcode 2011PhRvL.106m1802A. doi:10.1103/PhysRevLett.106.131802.
+    ^ G. Aad et al. (ATLAS collaboration) (2011). "Search for squarks and gluinos using final states with jets and missing transverse momentum with the ATLAS detector in √s = 7 TeV proton-proton collisions". Physics Letters B 701 (2): 186–203. arXiv:1102.5290. Bibcode 2011PhLB..701..186A. doi:10.1016/j.physletb.2011.05.061.
+    ^ Chalmers, M. Reality check at the LHC, physicsworld.com, Jan 18, 2011
+    ^ McAlpine, K. Will the LHC find supersymmetry?, physicsworld.com, Feb 22, 2011
+    ^ Geoff Brumfiel (2011). "Beautiful theory collides with smashing particle data". Nature 471 (7336): 13–14. Bibcode 2011Natur.471...13B. doi:10.1038/471013a.
+    ^ CERN Press Office (21 July 2011). "LHC experiments present their latest results at Europhysics Conference on High Energy Physics". Press.web.cern.ch. Retrieved 2011-09-01.
+    ^ CERN Press Office (22 August 2011). "LHC experiments present latest results at Mumbai conference". Press.web.cern.ch. Retrieved 2011-09-01.
+    ^ Pallab Ghosh (22 August 2011). "Higgs boson range narrows at European collider". BBC News.
+    ^ Pallab Ghosh (27 August 2011). "LHC results put supersymmetry theory 'on the spot'". BBC News.
+    ^ "LHCb experiment sees Standard Model physics". Symmetry Breaking. SLAC/Fermilab. 29 August 2011. Retrieved 2011-09-01.
+    ^ "ATLAS and CMS experiments present Higgs search status". CERN. 13 December 2011. Retrieved 2 January 2012.
+    ^ "CERN experiments observe particle consistent with long-sought Higgs boson". CERN. 4 July 2012. Retrieved 4 July 2012.
+    ^ First evidence for the decay B0>0 → μ+-, 8 Nov 2012, draft, LCHb collaboration.
+    ^ F. Ruggerio (29 September 2005). "LHC upgrade (accelerator)". 8th ICFA Seminar. Retrieved 2009-09-28.
+    ^ "DOE Review of LARP". Fermilab. 5–6 June 2007. Retrieved 2011-06-09.
+    ^ "CERN — The Large Hadron Collider". Public.web.cern.ch. Retrieved 2010-08-28.
+    ^ Agence Science-Presse (7 December 2009). "LHC: Un (très) petit Big Bang" (in French). Lien Multimédia. Retrieved 2010-10-29. Google translation
+    ^ "How much does it cost?". CERN. 2007. Retrieved 2009-09-28.
+    ^ Luciano Maiani (16 October 2001). "LHC Cost Review to Completion". CERN. Retrieved 2001-01-15.
+    ^ Toni Feder (2001). "CERN Grapples with LHC Cost Hike". Physics Today 54 (12): 21. Bibcode 2001PhT....54l..21F. doi:10.1063/1.1445534.
+    ^ "Bursting magnets may delay CERN collider project". Reuters. 5 April 2007. Retrieved 2009-09-28.
+    ^ Paul Rincon (23 September 2008). "Collider halted until next year". BBC News. Retrieved 2009-09-28.
+    ^ "Worldwide LHC Computing Grid". CERN. 2008. Retrieved 2 October 2011.
+    ^ "grille de production : les petits pc du lhc". Cite-sciences.fr. Retrieved 2011-05-22.
+    ^ "Worldwide LHC Computing Grid". Official public website. CERN. Retrieved 2 October 2011.
+    ^ BOINC client-server technology#Server design weaknesses, tecnologies weakness on win32 api
+    ^ LHC@home, BOINC
+    ^ Alan Boyle (2 eptember 2008). "Courts weigh doomsday claims". Cosmic Log. MSNBC. Retrieved 2009-09-28.
+    ^ J.-P. Blaizot, J. Iliopoulos, J. Madsen, G.G. Ross, P. Sonderegger, H.-J. Specht (2003). "Study of Potentially Dangerous Events During Heavy-Ion Collisions at the LHC". CERN. Retrieved 2009-09-28.
+    ^ J. Ellis J, G. Giudice, M.L. Mangano, T. Tkachev, U. Wiedemann (LHC Safety Assessment Group) (5 September 2008). "Review of the Safety of LHC Collisions". Journal of Physics G 35 (11): 115004. arXiv:0806.3414. Bibcode 2008JPhG...35k5004E. doi:10.1088/0954-3899/35/11/115004.
+    ^ "The safety of the LHC". CERN. 2008. Retrieved 2009-09-28.
+    ^ Division of Particles & Fields. "Statement by the Executive Committee of the DPF on the Safety of Collisions at the Large Hadron Collider". American Physical Society. Retrieved 2009-09-28.
+    ^ "Challenges in accelerator physics". CERN. 14 January 1999. Retrieved 2009-09-28.
+    ^ John Poole (2004). "Beam Parameters and Definitions".
+    ^ Robert Aymar (26 October 2005). "Message from the Director-General" (Press release). CERN Press Office. Retrieved 2009-09-28.
+    ^ "Fermilab 'Dumbfounded' by fiasco that broke magnet". Photonics.com. 4 April 2007. Archived from the original on 2008-06-16. Retrieved 2009-09-28.
+    ^ "Fermilab update on inner triplet magnets at LHC: Magnet repairs underway at CERN" (Press release). CERN Press Office. 1 June 2007. Retrieved 2009-09-28.
+    ^ "Updates on LHC inner triplet failure". Fermilab Today. Fermilab. 28 September 2007. Retrieved 2009-09-28.
+    ^ Paul Rincon (23 September 2008). "Collider halted until next year". BBC News. Retrieved 2009-09-29.
+    ^ Dennis Overbye (5 December 2008). "After repairs, summer start-up planned for collider". New York Times. Retrieved 2008-12-08.
+    ^ L. Rossi (2010). "Superconductivity: its role, its success and its setbacks in the Large Hadron Collider of CERN". Superconductor Science and Technology 23 (3): 034001. Bibcode 2010SuScT..23c4001R. doi:10.1088/0953-2048/23/3/034001.
+    ^ "Angels and Demons". CERN. January 2008. Retrieved 2009-09-28.
+    ^ Ceri Perkins (2 June 2008). "ATLAS gets the Hollywood treatment". ATLAS e-News. Retrieved 2009-09-28.
+    ^ "FlashForward". CERN. September 2009. Retrieved 2009-10-03.
+    ^ Katherine McAlpine (28 July 2008). "Large Hadron Rap". YouTube. Retrieved 2011-05-08.
+    ^ Roger Highfield (6 September 2008). "Rap about world's largest science experiment becomes YouTube hit". Telegraph (London). Retrieved 2009-09-28.
+    ^ Jennifer Bogo (1 August 2008). "Large Hadron Collider rap teaches particle physics in 4 minutes". Popular Mechanics. Retrieved 2009-09-28.
+    ^ Malcolm W Brown (29 December 1998). "Physicists Discover Another Unifying Force: Doo-Wop". New York Times (New York, USA). Retrieved 2010-09-21.
+    ^ Heather McCabe (10 February 1999). "Grrl Geeks Rock Out". Wired News. Retrieved 2010-09-21.
+    ^ http://movies.netflix.com/WiMovie/World_s_Toughest_Fixes_Season_2_Columbia_River_Dam/70144790?trkid=496624 /nofollow
+    ^ Boyle, Rebecca (2012-10-31). "Large Hadron Collider Unleashes Rampaging Zombies". Retrieved 22 November 2012.
+
+15 External links
+	Wikimedia Commons has media related to: Large Hadron Collider
+
+    Official website
+    Overview of the LHC at CERN's public webpage
+    CERN Courier magazine
+    CERN on Twitter
+    CMS Experiment at CERN on Twitter
+    Unofficial CERN on Twitter
+    LHC Portal Web portal
+    [1] YouTube video, CERN, how it works
+    [2] YouTube video, Megastructures, Atom Smasher
+    Lyndon Evans and Philip Bryant (eds) (2008). "LHC Machine". Journal of Instrumentation 3 (8): S08001. Bibcode 2008JInst...3S8001E. doi:10.1088/1748-0221/3/08/S08001. Full documentation for design and construction of the LHC and its six detectors (1600p).
+    symmetry magazine LHC special issue August 2006, special issue December 2007
+    New Yorker: Crash Course. The world's largest particle accelerator.
+    NYTimes: A Giant Takes On Physics' Biggest Questions.
+    Why a Large Hadron Collider? Seed Magazine interviews with physicists.
+    Thirty collected pictures during commissioning and post- 19 September 2008 incident repair, from Boston Globe.
+    Podcast Interview with CERN's Rolf Landua about the LHC and the physics behind it
