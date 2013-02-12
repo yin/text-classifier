@@ -49,9 +49,9 @@ def test_dev_02
   puts "# of docs: #{classifier.num_of_docs}"
   puts classifier.dictionary_sizes
 
-  puts "== Propabilities"
-  puts classifier.doc_counts_and_class_propabilities
-  classifier.test_word_propabilities ['java', 'c', 'object']
+  puts "== Probabilities"
+  puts classifier.doc_counts_and_class_probabilities
+  classifier.test_word_probabilities ['java', 'c', 'object']
 
   puts "== Tests"
   test_docs = [

@@ -8,7 +8,7 @@ module BayesClassifierInspector
     str
   end
 
-  def doc_counts_and_class_propabilities
+  def doc_counts_and_class_probabilities
     str = ''
     classes.each do |c|
       str += "doc_count(#{c}) = #{doc_count(c)}\n"
@@ -17,7 +17,7 @@ module BayesClassifierInspector
     str
   end
 
-  def test_word_propabilities(test_words)
+  def test_word_probabilities(test_words)
     str = ''
     classes.each do |c|
       test_words.each do |w|
@@ -30,7 +30,7 @@ module BayesClassifierInspector
   def evaluate(test_docs)
     test_docs.each do |test_doc|
       puts "#{classify(test_doc)[:class]}:\t #{make_excerpts([test_doc], 40)}"
-      puts "\t\t#{classify_with_propability(test_doc)}"
+      puts "\t\t#{classify_with_probability(test_doc)}"
     end
   end
 end

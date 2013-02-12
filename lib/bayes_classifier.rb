@@ -53,7 +53,7 @@ class BayesClassifier
     end
   end
 
-  # TODO(yin): Currently, propabilities are in log-space. Might be more flexible 
+  # TODO(yin): Currently, probabilities are in log-space. Might be more flexible 
   def P_of_c(clazz)
     Math.log(doc_count(clazz).to_f / num_of_docs)
   end
@@ -76,15 +76,15 @@ class BayesClassifier
   alias :P_of_w_given_c :P_of_w_given_c_laplace_add_one
 
   def P_of_d_given_c(word_bag, clazz)
-    propability = P_of_c(clazz)
+    probability = P_of_c(clazz)
     word_bag.each do |word, occurences|
       p_word = P_of_w_given_c(word, clazz)
-      propability += p_word * occurences
+      probability += p_word * occurences
     end
-    propability
+    probability
   end
 
-  def classify_with_propability(test_doc)
+  def classify_with_probability(test_doc)
     test_bag = compute_frequencies(test_doc)
     p = {}
     classes.each do |clazz|
@@ -96,13 +96,13 @@ class BayesClassifier
   def classify(test_doc)
     max_p = nil
     max_clazz = nil
-    classify_with_propability(test_doc).each do |clazz, p|
+    classify_with_probability(test_doc).each do |clazz, p|
       if max_p.nil? || max_p < p
         max_p = p
         max_clazz = clazz
       end
     end
-    {:class => max_clazz, :propability => max_p}
+    {:class => max_clazz, :probability => max_p}
   end
 
   def to_s
