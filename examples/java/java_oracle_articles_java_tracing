@@ -1,0 +1,368 @@
+How to Trace a Java Application Running on Oracle Solaris
+
+by Amit Hurvitz
+
+How to combine JSDT and BTrace to dynamically trace a Java application running in an Oracle Solaris environment without changing the source code and without impacting performance.
+
+Published April 2012
+
+The DTrace feature of Oracle Solaris is known for its broad ability to look at almost anything going on in a computer running Oracle Solaris 10 or above (or another OS that has adopted DTrace). Java applications can be traced by DTrace, but there used to be some limitations and restrictions in tracing Java code.
+Want technical articles like this one delivered to your inbox?  Subscribe to the Systems Community Newsletter—only technical content for sysadmins and developers.
+
+There are many good tracing tools for Java, for example, jvisualvm, which is included in the JDK release, is very handy and provides rich capabilities. Still, most of these tools lack the combination of extreme dynamism, nonintrusiveness, and broad capabilities of the DTrace framework.
+
+Java Statically Defined Tracing (JSDT), which follows User-level Statically Defined Tracing (USDT) for C/C++ code, enables programmers to statically add probes to their code. Those probes, while not activated, do not impact application performance and, when activated, are designed to have minimal impact. This opens the door for the broad DTrace observation scope and its optimal aggregation capabilities.
+
+There is still a potential barrier: the need to add these probes to the code—Java code, in the JSDT case. But Java brings some new capabilities, which do not exist for native languages. For example, you can redefine program classes during the program run. Also, since Java Platform, Standard Edition 6 (Java SE 6), the Attach API enables attaching to any running Java SE 6 or higher JVM and dynamically initiating and executing an agent inside the attached JVM. By combining all this, we can theoretically do dynamic instrumentation of JSDT probes in Java code! That is the topic of this article.
+What We Want to Do
+
+Figure 1 shows an example to illustrate the idea. In this example, we would like to explore some behavior without stopping the application, changing the code, or recompiling the application.
+Figure 1: Exploring the Behavior of a Java Application
+
+Figure 1. Example of Exploring the Behavior of a Java Application
+Current Requirements, Limitations, and Caveats
+
+JSDT is supported on Java Hotspot VM 1.7. Use version 1.7.0_04 to avoid an issue of failure to create the first provider. I tested the process described in this article on Oracle Solaris 11, and everything should work properly on Oracle Solaris 10; however, I did not check other operating systems that support DTrace and I didn't check other JVMs.
+
+The BTrace client connection initiation to the target application fails from time to time. Just try again if it fails.
+
+BTrace currently does not clean ("de-instrument") the instrumented classes; it just de-activates the probes. This behavior prevents repeated instrumentation of the same probes and same classes. I hope cleaning will be implemented soon.
+JSDT Basics
+
+Defining JSDT probes is easy to do but requires a simple initialization. The first step is to define Java interfaces for each provider (extends com.sun.tracing.Provider). The interface methods will also be the corresponding DTrace probe names, as shown in Listing 1.
+
+public interface MyProvider extends com.sun.tracing.Provider {
+  void startProbe();
+  void workProbe(int intData, String stringData);
+  void endProbe();
+  }
+  
+// Use a static factory to create a provider
+import com.sun.tracing.ProviderFactory;
+
+public static MyProvider provider;
+
+  ProviderFactory factory = ProviderFactory.getDefaultFactory();
+  
+  provider = factory.createProvider(MyProvider.class);
+  
+  // Call the provider methods from inside your code to trigger
+  // the corresponding DTrace probes.
+  Provider.startProbe();
+  ...
+  Provider.workProbe(i, str);
+   ...
+  Provider.endProbe();
+
+Listing 1. Defining Java Interfaces
+How to Dynamically Instrument JSDT Probes
+
+We saw how to define the probes statically by adding them to our source code. Now let's try to do the same thing without changing the source code. To use the Attach API and the Java code instrumentation capabilities, we can take advantage of the great BTrace package, which provides a rich set of dynamic tracing capabilities that try to follow the DTrace standards while tracing Java applications. BTrace has very high value by itself, but here we'll just "take a ride" by using it with our JSDT stuff to instrument a running application.
+BTrace Basics
+
+BTrace is a tool that is built on the efficient ASM byte code framework. BTrace lets you dynamically instrument running Java application classes by using special Java annotations. The annotations act as directives to indicate where tracing code should be inserted in the target application, for example:
+
+@OnMethod(clazz="java.lang.Thread",method="start",location=@Location(Kind.Return))
+
+BTrace creates and invokes an agent in the target JVM (through the Attach API), and then it uses a client to communicate with that agent to perform the instrumentation and to get output tracing data, if desired.
+
+In its default "safe" mode, BTrace puts some restrictions on the injected code to avoid potential undesired side effects on the target JVM. One of the main restrictions is no calls to methods other than BTrace library methods. (BTrace provides a rich set of methods in its utils package.) In our case, we will use the "unsafe" mode, so we can define and call the DTrace provider class methods.
+
+Listing 2 is a kind of "Hello World" BTrace script that instruments the Thread.start() method entry and prints a message. The script does not call any external to BTrace methods, so it can be compiled in safe mode. However, we will later issue calls to JSDT to provide class methods, and we will have to use unsafe mode then.
+
+// import all BTrace annotations
+import com.sun.btrace.annotations.*;
+// import statics from BTraceUtils class
+import static com.sun.btrace.BTraceUtils.*;
+
+// @BTrace annotation indicates that this is a BTrace program
+@BTrace
+class HelloWorld {
+// @OnMethod annotation indicates where to probe.
+// In this example, we are interested in the entry
+// into the Thread.start() method.
+  @OnMethod(
+    clazz="java.lang.Thread",
+    method="start"
+  )
+  void func() {
+    sharedMethod(msg);
+  }
+  void sharedMethod(String msg) {
+    // println is defined in BTraceUtils
+    println(msg);
+  }
+}
+
+Listing 2. Sample BTrace Script
+
+Once the BTrace environment is in place, you can run the BTrace script to monitor any running Java process:
+
+# btrace <target-java-pid> HelloWorld.java
+
+
+For more information about BTrace, refer to the BTrace project and especially look at the BTrace User's Guide.
+
+The DTrace provider classes are required for both the BTrace script compilation and the target application runtime. The providers need to be initialized prior to the first call to a provider method. The best method is to initialize the providers during the class instrumentation. This can be done with static initialization. Static initializers contained in the BTrace class we define do not work properly, but importing a factory class with static initialization works, at least lazily. A provider factory class with static initialization might look like Listing 3.
+
+import com.sun.tracing.*;
+
+public class MyProviderFactory {
+
+  private static ProviderFactory factory;
+  public static MyProvider provider;
+  
+  static {
+    factory = ProviderFactory.getDefaultFactory();
+    provider = factory.createProvider(MyProvider.class);
+  }
+  public static void probeName1();
+  public static void probeName2(String s, int i);
+}
+
+Listing 3. Provider Factory Class with Static Initialization
+
+The static code is lazily initialized at least just before the first probe method call.
+Triggering the Probes from a BTrace Script
+
+In order to trigger JSDT probes from BTrace code (as of BTrace 1.2), we need to do some setting and tweaking:
+
+    Change to BTrace unsafe mode by editing the <Btrace-install-dir>/bin/btrace script and changing -Dcom.sun.btrace.unsafe=false to -Dcom.sun.btrace.unsafe=true.
+    Add the providers to the BTrace compilation class path by adding the providers' JAR file to the -cp chain in the Java invocation command at <Btrace-install-dir>/bin/btrace. If you also use any other classes in the BTrace script (such as target application classes you would like to refer to), you need to add them, too.
+    The target Java application loads our providers with the boot class loader. Therefore, we need to make the providers reachable to the boot class loader. Unless you are doing something else with the boot class loader, you have these options for adding to the boot class path:
+        The easiest way, which does not involve adding a flag to the target application, is adding the provider classes to the classes directory under your active JRE (jre/classes), for example, /home/ahurvitz/java/jdk1.7.0_04/jre/classes. If a classes directory does not exist there, create it. To verify that the target application class path includes this directory by default in the boot class path, you can run the JDK jinfo command like this:
+
+        # jinfo -sysprops <target-java-pid> | grep "sun.boot.class.path"
+
+        The other option involves adding a Java option (flag) to the target application, which is less convenient. To do this, add a -Dsun.boot.class.path=<current-boot-class-path>:<providers-jar> flag to the target application. Replace <current-boot-class-path> with the value of the sun.boot.class.path property, which you can retrieve by running the following command:
+
+        # jinfo -sysprops <target-java-pid> | grep "sun.boot.class.path" 
+
+Downloading What's Needed, Installing, and Running: A Step-by-Step Example
+
+The extremely simple Java program in Listing 4 will be used as the target application to trace in the following example. Assume that we'd like to trigger DTrace probes for every entry into and exit from the makeOneIteration() method, passing a counter object as a parameter.
+
+package tracetarget;
+
+public class TraceTarget {
+
+    private String strProp;
+    private int intProp;
+    
+    public static void main(String[] args) {
+        TraceTarget me = new TraceTarget();
+        String runTimeId = java.lang.management.ManagementFactory.getRuntimeMXBean().getName();
+        System.out.println(runTimeId);
+        me.work();
+    }
+    
+    public TraceTarget() {
+        strProp = "I am a tracing target";
+        intProp = 17;
+    }
+
+    public int getIntProp() {
+        return intProp;
+    }
+
+    public String getStrProp() {
+        return strProp;
+    }
+
+    private void makeOneIteration(Counter c) {
+        c.count();
+        try {
+            Thread.sleep(1);
+        } catch (InterruptedException e) {
+        }
+    }
+
+    public void work() {
+        Counter counter = new Counter();
+        while (true) {
+            makeOneIteration(counter);
+        }
+    }
+}
+
+
+package tracetarget;
+
+public class Counter {
+    private int counter;
+
+    Counter() {
+        counter = 0;
+    }
+
+    public int getCounter() {
+        return counter;
+    }
+
+    public void count() {
+        counter++;
+    }
+}
+
+Listing 4. Code for Tracing Target
+
+After compiling this program, we'll run it. The program kindly prints its process ID (pid) for the next steps. This pid is the <target-java-pid>, which we will refer to while running the btrace command.
+
+Now that we have a program to trace, let's start. (It is assumed that nothing has been installed yet.)
+
+    Download the binary file for BTrace version 1.2.1 (btrace-bin.tar.gz) from http://kenai.com/projects/btrace/downloads/directory/releases/current. This file is for Linux and Mac OS, but it also works for Oracle Solaris.
+    Uncompress and untar the file, for example:
+
+    # gunzip < btrace-bin.tar.gz | tar xf -
+
+    Set the JAVA_HOME environment variable to the correct JDK (JDK 7 update 4 or higher). JAVA_HOME is used by the BTrace binary.
+    Add the BTrace bin directory to the path.
+    Now define the DTrace providers, compile the provider classes, and archive them in a JAR file. MyProvider is the provider name in our example and startMethod() and finishMethod() are the probe names.
+
+    package jsdttest;
+
+    import com.sun.tracing.*;
+
+    public interface MyProvider extends Provider {
+
+      public void startMethod(String methodName);
+      public void startMethod(String methodName, String str, int i);
+      public void finishMethod(int result);
+    }
+
+    Define the provider factory, as shown in Listing 5.
+
+    package jsdttest;
+
+    import com.sun.tracing.*;
+
+    public class MyProviderFactory {
+
+      private static ProviderFactory factory;
+      public static MyProvider provider;
+
+      static {
+        factory = ProviderFactory.getDefaultFactory();
+        provider = factory.createProvider(MyProvider.class);
+      }
+      public static void probeName1() {}
+      public static void probeName2(String s, int i);
+    }
+
+    Listing 5. Defining the Provider Factory
+    Write a BTrace script that triggers the provider initialization and triggers the probes where desired. Listing 6, Trace.java, is an example.
+
+    import com.sun.btrace.annotations.*; 
+    // import statics from BTraceUtils class 
+    import static com.sun.btrace.BTraceUtils.*;
+    import com.sun.tracing.*;
+    import com.sun.btrace.AnyType;
+    import jsdttest.MyProvider; 
+    import jsdttest.DummyProvider; 
+    import jsdttest.MyProviderFactory; 
+    import tracetarget.TraceTarget;
+    import tracetarget.Callee;
+
+    // @BTrace annotation indicates that this is a BTrace program
+
+    @BTrace class Trace {
+
+    // @OnMethod annotation indicates where to probe.
+    // In this example, we are interested in entry 
+    // into the Thread.start() method. 
+    @OnMethod(
+        clazz="tracetarget.TraceTarget",
+        method="/.*/"
+    )
+
+        void mEnrty(@Self Object self, @ProbeClassName String probeClass, @ProbeMethodName 
+     String probeMethod, AnyType[] args) {
+    	MyProvider provider = MyProviderFactory.provider;
+            provider.startMethod(probeMethod);
+            provider.startMethod(probeMethod, ((TraceTarget)self).getStrProp(), ((Callee)args[0]).getCounter());
+        }
+
+    @OnMethod(
+        clazz="tracetarget.TraceTarget",
+        method="/.*/",
+        location=@Location(Kind.RETURN)
+    )
+        void mReturn(@ProbeClassName String probeClass, @ProbeMethodName String probeMethod) {
+    	MyProvider provider = MyProviderFactory.provider;
+            provider.finishMethod(19);
+        }
+    }
+
+    Listing 6. Trace.java Script
+    Configure BTrace by editing <Btrace-install-dir>/bin/btrace, as follows. (It is recommended that you save a copy before you edit the file.)
+        Change unsafe mode from false to true:
+
+        ${JAVA_HOME}/bin/java ... -Dcom.sun.btrace.unsafe=true ...
+
+        Add the provider's JAR and any other class you use in the BTrace script, for example, objects you refer to) to the boot class path. In the following example, we are also adding the TraceTarget class, because we are referring to its object in the BTrace script.
+
+        ${JAVA_HOME}/bin/java ... -cp ${BTRACE_HOME}/build/btrace-client.jar:${TOOLS_JAR}:/usr/share/lib/java/dtrace.jar:
+        /home/ahurvitz/NetBeansProjects/jsdtTest/dist/jsdtTest.jar:/home/ahurvitz/NetBeansProjects/TraceTarget/dist/
+        TraceTarget.
+        jar ...
+
+    Run BTrace to trace the target application:
+
+    # btrace <target-java-pid> Trace.java
+
+    Check the DTrace probes using dtrace -l | grep <provider-name>, for example:
+
+    # dtrace -l | grep MyProvider
+
+    Write a small DTrace script to test it all, as shown in Listing 7, and call the script my_provider.d.
+
+    #!/usr/sbin/dtrace -Cs
+
+    BEGIN
+    {
+        start_timestamp = timestamp;
+    }
+
+    MyProvider$target:::startMethod
+    {
+        @starts[pid] = count();
+        printf("started method, arg0 = %s\n", copyinstr(arg0));
+        printf("arg1 = %s\n", arg1 ? copyinstr(arg1) : "null");
+        printf("arg2 = %d\n", arg2);
+    }
+
+    MyProvider$target:::finishMethod
+    {
+        @ends[pid] = count();
+        printf("finished method, arg0: %d\n", arg0);
+    }
+
+    tick-5sec
+    {
+        printf("stats:\n******\n");
+        printa(@starts);
+        printa(@ends);
+    }
+
+    Listing 7. Test Script
+    Run the DTrace test script:
+
+    # dtrace my_provider.d -p <target-java-pid>
+
+Summary
+
+DTrace, JSDT, and BTrace provide an easy way to dynamically instrument a Java application with DTrace probes, which opens up many possibilities for ad hoc exploration of running Java applications on Oracle Solaris 10 and above.
+
+See Also
+
+    Instrumenting Java Code with JSDT Probes
+    BTrace User's Guide
+    DTrace User Guide
+    "DTrace Tools" by Brendan Gregg
+
+About the Author
+
+Amit Hurvitz has worked on the ISV Engineering team at Oracle Hardware Engineering (formerly Sun Microsystems) for 10 years. Prior to that, he worked on C compiler optimizations and was a C++ and Java Platform, Enterprise Edition developer.
+Revision 1.0, 04/17/2012
+
+Follow us on Facebook, Twitter, or Oracle Blogs.

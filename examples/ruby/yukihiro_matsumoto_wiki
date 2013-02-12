@@ -1,0 +1,83 @@
+Yukihiro Matsumoto
+From Wikipedia, the free encyclopedia
+Jump to: navigation, search
+	This article includes a list of references, but its sources remain unclear because it has insufficient inline citations. Please help to improve this article by introducing more precise citations. (June 2011)
+Yukihiro Matsumoto
+松本行弘 (まつもとゆきひろ)
+
+Yukihiro Matsumoto at the ACM International Collegiate Programming Contest in Tokyo, 14 March 2007
+Born 	14 April 1965 (age 47)
+Nationality 	Japanese
+Occupation 	Computer scientist, programmer, author
+Known for 	Ruby
+Children 	4
+
+Yukihiro Matsumoto (松本行弘 (まつもとゆきひろ) Matsumoto Yukihiro?, a.k.a. Matz, born 14 April 1965) is a Japanese computer scientist and software programmer best known as the chief designer of the Ruby programming language and its reference implementation, Matz's Ruby Interpreter (MRI).
+
+As of 2011, Matsumoto is the Chief Architect of Ruby at Heroku, an online cloud platform-as-a-service in San Francisco. He is a fellow of Rakuten Institute of Technology, a research and development organization in Rakuten Inc.
+
+Matsumoto's name can be written using kanji: 松本行弘, but is normally written using hiragana: まつもとゆきひろ.
+Contents
+
+    1 Personal life
+    2 Work
+        2.1 Ruby
+        2.2 mruby
+    3 Written works
+    4 Online presentations and interviews
+    5 See also
+    6 Recognition
+    7 References
+    8 External links
+
+1 Personal life
+
+Born in Osaka Prefecture, he was raised in Tottori Prefecture from the age of four. According to an interview conducted by Japan Inc., he was a self-taught programmer until the end of high school.[1] He graduated with an information science degree from University of Tsukuba, where he was a member of Ikuo Nakata's research lab on programming languages and compilers. Matsumoto is married and has four children. He is a member of The Church of Jesus Christ of Latter-day Saints, did standard service as a missionary and is now a counselor in his church ward.[2]
+2 Work
+2.1 Ruby
+
+Matz released the first version of the Ruby programming language on 21 December 1995[3][4] and he is still leading the development effort on the reference implementation often called MRI for Matz Ruby Implementation.
+2.2 mruby
+
+In April 2012, Matz open-sourced his work on a new implementation of the Ruby language called: mruby [5][6] , a minimal implementation based on his VM called ritevm and which is designed to allow software developers to embed Ruby in other programs while keeping memory footprint small and performance optimized.
+3 Written works
+
+    Ruby in a Nutshell ISBN 0-596-00214-9
+    The Ruby Programming Language ISBN 0-596-51617-7
+
+4 Online presentations and interviews
+
+    Keynote from RubyConf 2010
+    The 0.8 true language RubyConf 2009 Keynote Address, San Francisco, CA
+    Interview about the design of programming languages from QCon San Francisco 2009
+    Presentation about Ruby 1.9 from Google Tech Talks 2008
+    Does Language Matter? RubyConf 2007 Keynote Address, Charlotte, North Carolina
+
+5 See also
+
+    Ruby programming language
+    Ruby on Rails
+
+6 Recognition
+
+    Matz received the 2011 Award for the Advancement of Free Software from the Free Software Foundation (FSF) at the 2012 LibrePlanet conference at the University of Massachusetts Boston in Boston.[7]
+
+7 References
+
+    ^ An interview by Japan Inc.
+    ^ http://cs.byu.edu/colloquia/2006-10-19
+    ^ More archeolinguistics: unearthing proto-Ruby
+    ^ "Re: history of ruby" – Email from Yukihiro Matsumoto to ruby-talk
+    ^ mruby source code
+    ^ mruby and MobiRuby announced
+    ^ 2011 Free Software Foundation awards
+
+8 External links
+	Wikimedia Commons has media related to: Yukihiro Matsumoto
+
+    (Japanese) Matz's web diary (and translated to English with Google Translate)
+    An interview by Artima Developer
+    Ruby Design Principles talk from IT Conversations
+    The Ruby Programming Language – An introduction to the language by its own author
+    Treating Code as an Essay – Matz's writeup for the book Beautiful Code, edited by Andy Oram, Greg Wilson, O'Reilly, 2007. ISBN 0-596-51004-7 ISBN 9780596510046
+    Rails Podcast Interview – An interview with Matz at RubyConf 2007 in Denver, Colorado
