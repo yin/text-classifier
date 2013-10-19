@@ -1,12 +1,13 @@
 require 'rubygems'
 require 'facets'
-require 'lib/bag_of_words'
-require 'lib/utils'
+require './lib/bag_of_words'
+require './lib/utils'
 
+# BayesClassifier 
 class BayesClassifier
   def initialize()
   end
-
+  
   def classes
     @docs.keys
   end
@@ -86,11 +87,10 @@ class BayesClassifier
 
   def classify_with_probability(test_doc)
     test_bag = compute_frequencies(test_doc)
-    p = {}
-    classes.each do |clazz|
-      p[clazz] = P_of_d_given_c(test_bag, clazz)
+    classes.reduce({}) do |computed, clazz|
+      computed[clazz] = P_of_d_given_c(test_bag, clazz)
+      computed
     end
-    p
   end
 
   def classify(test_doc)

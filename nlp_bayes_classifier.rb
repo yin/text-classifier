@@ -1,7 +1,7 @@
 require 'rubygems'
-require 'lib/utils'
-require 'lib/bayes_classifier'
-require 'lib/bayes_classifier_inspector'
+require_relative 'lib/utils'
+require_relative 'lib/bayes_classifier'
+require_relative 'lib/bayes_classifier_inspector'
 
 def run
   test_dev_01
