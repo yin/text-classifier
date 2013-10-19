@@ -1,0 +1,15 @@
+! bonito:
+! 	$Id: resource.win,v 1.8 2001/11/28 17:15:52 pary Exp $
+!
+!  Copyright (c) 2000,2001  Pavel Rychly
+
+!*options.libdir:	C:\Program Files\Bonito
+*options.libdir:	.
+*options.printer:	notepad.exe /p
+*options.runbrowser:	start
+
+*Font:			Arial 10
+*list.font:		Times 11
+*list.col0-font:	Times 11 bold
+*list.attr-font:	Times 11
+*licensewin.msg.font:	Arial 9

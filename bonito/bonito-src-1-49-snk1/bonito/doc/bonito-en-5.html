@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="LinuxDoc-Tools 0.9.21">
+ <TITLE>Bonito (version 1.4) -- User's Guide: Templates</TITLE>
+ <LINK HREF="bonito-en-6.html" REL=next>
+ <LINK HREF="bonito-en-4.html" REL=previous>
+ <LINK HREF="bonito-en.html#toc5" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="bonito-en-6.html">Next</A>
+<A HREF="bonito-en-4.html">Previous</A>
+<A HREF="bonito-en.html#toc5">Contents</A>
+<HR>
+<H2><A NAME="s5">5.</A> <A HREF="bonito-en.html#toc5">Templates</A></H2>
+
+<P>The template is a kind of query which simplifies repeated queries of
+the same type.  This means that a complicated query is created only
+once as a template.  During various executions only values for the
+template need to be changed.</P>
+
+<H2><A NAME="ss5.1">5.1</A> <A HREF="bonito-en.html#toc5.1">New template</A>
+</H2>
+
+<P>A template consists of a name, a template text and an optional
+description.  A name is a unique identifier of a template and is used
+when a query is invoked.  All the three items are entered in
+<B>-&gt;Query-&gt;New query</B>.  The template text and the description can be later
+modified in the list of templates (<B>-&gt;Query-&gt;List of templates</B>).</P>
+<P>In the template, text variables can be used.  When the template is used,
+variables are substituted with real parameters.  These variables
+consist of <CODE>$</CODE> character followed by a number.  The first parameter will
+be then substituted for all occurrences of variable <CODE>$1</CODE>, the second
+parameter for all occurrences of variable <CODE>$2</CODE>, etc.</P>
+<P>For example, a template for all word forms of a regular English verb 
+could look like this: 
+<HR>
+<PRE>
+[word="$1" | word="$1s" | word="$1ing" | word="$1ed"]
+</PRE>
+<HR>
+</P>
+
+<H2><A NAME="ss5.2">5.2</A> <A HREF="bonito-en.html#toc5.2">Using of templates</A>
+</H2>
+
+<P>When a template is invoked, it is written into the same row as a usual
+query.  It differs from a usual query in this way: the first character
+from the left is an exclamation mark (<CODE>!</CODE>), the template name
+follows, then a colon (<CODE>:</CODE>) and parameters divided by a
+space.  If the name of the above template was <EM>verb</EM>, the
+query assignment would look like this: 
+<HR>
+<PRE>
+!verb: help
+</PRE>
+<HR>
+</P>
+
+<HR>
+<A HREF="bonito-en-6.html">Next</A>
+<A HREF="bonito-en-4.html">Previous</A>
+<A HREF="bonito-en.html#toc5">Contents</A>
+</BODY>
+</HTML>

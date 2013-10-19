@@ -1,0 +1,93 @@
+#  bonito: english menu definition             -*- Tcl -*-
+#   $Id: menu.english,v 1.28 2003/12/08 09:49:30 pary Exp $
+#
+#  Copyright (c) 2000-2003  Pavel Rychly
+
+
+cascade "~Manager" {
+    command "~Connection ..." login
+    command "Change ~password ..." change_passwd
+    command "~Refresh Result" refreshResult
+    command "~Options ..." setopt_win
+    command "Change ~language ..." changeLanguageWin
+    catch {
+	if {[llength $opt::systemencodings] > 1} {
+	    command "Change ~Encoding" changeEncoding
+	}
+    }
+    separator
+    command "E~xit" exitApp Alt+F4
+}
+cascade "C~orpus" {
+    command "~Information summary" corpusInfo Ctl+I
+    command "~Statistics" miscoreWindow
+    command "~Create Subcorpus" subcorpWindow
+    command "~Delete Subcorpus" deletesubcorpWindow
+    command "Word ~List" wordlistWindow
+    command "Default ~Attribute" defaultattrWindow
+}
+cascade "~Query" {
+    command "~Evaluate" processQuery
+    command "List of ~named queries ..." listNamedWindow
+    command "List of ~templates ..." listTemplateWindow
+    command "~Graphical construction ..." {::graph::graphWindow $corp::qrgraph}
+    separator
+    command "New template ..." addTemplateWindow
+    command "Import templates ..." loadnewTemplates
+    command "Export templates ..." exportTemplates
+    command "Import named queries ..." loadnewNamedQueries
+    command "Export named queries ..." exportNamedQueries
+}
+cascade "~Concordance" {
+    command "Su~mmary" concinfo_detail
+    command "Save to ~file ..." saveToFile F2
+    command "~Print ..." print
+    separator
+    command "~Delete selected ..." deleteSelected
+    command "~Reduce ..." reduceWindow
+    command "~Simple Sort ..." sipmlesortWindow Ctl+S
+    command "~Generic Sort ..." gensortWindow Ctl+G
+    command "~Count Sort ..." countsortWindow
+    command "~Line Group Sort" linegroupsort
+    cascade "Sta~tistics" {
+	command "~Frequency distribution ..." freqdistWindow Ctl+F
+	command "~Collocations ..." collocWindow Ctl+L
+	command "~Distribution overview" distribWindow Ctl+D
+	command "Line ~group frequencies" linegroupstatWindow
+    }
+    command "S~wap KWIC and Collocates" swapKWICWindow
+    separator
+    command "~Undo" restore_conc Ctl+Z
+    command "Red~o" forward_conc Ctl+X
+    command "Assign ~Name ..." store_named_conc
+    command "Delete named ..." delete_named_conc_win
+}
+cascade "~View" {
+    command "~References ..." refWindow F4
+    command "~Attributes ..." attribWindow F5
+    command "~Structures ..." tagWindow F6
+    command "~Context ..." contextWindow F7
+    command "~Range ..." rangeWindow Ctl+R
+    separator
+    command "Page ~up" listview_add_before Ctl+PgUp
+    command "Page ~down" listview_add_after Ctl+PgDn
+    command "~Jump to" jumpWindow Ctl+J
+    command "~Parallel text" show_aligned F9
+}
+cascade "~Select" {
+    command "~All" "tlist:selectall .list" {Ctl++ Ctl+KP_Add}
+    command "~None" "tlist:selectno .list" {Ctl+- Ctl+KP_Subtract}
+    command "~Invert" "tlist:selectinvert .list" {Ctl+* Ctl+KP_Multiply}
+    command "Insert to ~clipboard" "tlist:clipboard .list" Ctl+Insert
+    command "~Detail to clipboard" "insertDetailIntoClipboard .detail.list" Ctl+C
+    global tcl_platform
+    if {$tcl_platform(platform) == "unix"} {
+	command "Export to CED" "tlist:exportced .list"
+    }
+}
+cascade "~Help" {
+    command "~About" aboutWin
+    command "License" showLicense
+    check "Show help hits" opt::bhelpenabled
+    command "~Documentation" runDocumentation
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+ <META NAME="GENERATOR" CONTENT="LinuxDoc-Tools 0.9.21">
+ <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+ <TITLE>Bonito verze 1.4 -- Příručka uživatele: Úvod</TITLE>
+ <LINK HREF="bonito-cz-2.html" REL=next>
+
+ <LINK HREF="bonito-cz.html#toc1" REL=contents>
+</HEAD>
+<BODY>
+<A HREF="bonito-cz-2.html">Next</A>
+Previous
+<A HREF="bonito-cz.html#toc1">Contents</A>
+<HR>
+<H2><A NAME="s1">1.</A> <A HREF="bonito-cz.html#toc1">Úvod</A></H2>
+
+<P>Bonito je grafické uživatelské rozhraní korpusového manažeru Manatee.
+Umožňuje tvořit dotazy a klást je na různé korpusy.  Výsledek je potom
+přehledně zobrazen, je možné ho různě upravovat a lze na něm počítat
+rozličné statistiky.</P>
+
+<H2><A NAME="ss1.1">1.1</A> <A HREF="bonito-cz.html#toc1.1">Korpus</A>
+</H2>
+
+<P>Korpus je zde chápán jako posloupnost tzv. <EM>pozic</EM>.  Každou
+pozici tvoří jedno slovo, číslo, interpunkční znaménko apod.  Vlastní
+rozdělení do pozic je u většiny korpusů provedeno automaticky
+externími nástroji, nijak nezávisí na systémech Manatee či Bonito a
+může se tedy korpus od korpusu lišit.</P>
+<P>Každá pozice je tvořena množinou <EM>pozičních atributů</EM>. Každý
+atribut obsahuje nějakou jednoduchou textovou informaci (slovo,
+základní tvar, slovní druh atd.).  Pozice libovolného korpusu obsahuje
+vždy minimálně atribut se jménem <EM>word</EM>, který obsahuje vlastní
+slovo na dané pozici.  Různé korpusy obsahují různé soubory
+atributů. Některé obsahují pouze zmíněný atribut <EM>word</EM>, jiné
+obsahují u každého slova jeho základní tvar (atribut <EM>lemma</EM>) a
+gramatickou informaci (atribut <EM>tag</EM>).  Některé korpusy mají
+gramatickou informaci rozdělenou do více specifických atributů.</P>
+
+<P>V korpusu mohou být zaznamenány také různé <EM>strukturní značky</EM>
+jako například hranice vět, odstavců, dokumentů apod.  Některé typy
+těchto značek mají navíc u každého výskytu značky v textu uloženu
+další informaci.  Například mnoho korpusů má celý text rozdělený na
+dokumenty strukturní značkou <EM>&lt;doc&gt;</EM>, která většinou obsahuje
+identifikátor zdroje dokumentu.</P>
+
+<P>U některých značkovaných korpusů je zvykem gramatickou informaci
+uloženou u každého slova nazývat značkou.  Tento typ značek ovšem
+netvoří výše definované strukturní značky, naopak jsou značky
+(gramatické informace) uloženy v některém z pozičních atributů.</P>
+
+
+<H2><A NAME="ss1.2">1.2</A> <A HREF="bonito-cz.html#toc1.2">Korpusový manažer</A>
+</H2>
+
+<P>Výsledkem dotazu na korpus je tzv. <EM>konkordanční seznam</EM>, který
+tvoří všechny pozice korpusu odpovídající zadanému
+dotazu. Konkordanční seznam se potom zobrazuje ve formátu <EM>KWIC</EM>
+(Key Word(s) In Context), kdy jsou hledaná slova se svými kontexty
+zobrazena přehledně pod sebou.  Konkordanční seznam je někdy zkráceně
+nazýván <EM>konkordancí</EM>.  Zkratka <B>KWIC</B> reprezentuje v
+programu hledané slovo či posloupnost slov.</P>
+
+
+<HR>
+<A HREF="bonito-cz-2.html">Next</A>
+Previous
+<A HREF="bonito-cz.html#toc1">Contents</A>
+</BODY>
+</HTML>

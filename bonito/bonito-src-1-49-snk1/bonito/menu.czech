@@ -1,0 +1,94 @@
+#encoding iso8859-2                          -*- Tcl -*-
+#  bonito: czech menu definition
+#   $Id: menu.czech,v 1.28 2003/12/08 09:49:20 pary Exp $
+#
+#  Copyright (c) 2000-2003  Pavel Rychly
+
+cascade "~Mana¾er" {
+    command "~Pøipojení ..." login
+    command "Zmìna ~hesla ..." change_passwd
+    command "Obnovení ~výsledku" refreshResult
+    command "Nastavení ..." setopt_win
+    command "Zmìna ~jazyka ..." changeLanguageWin
+    catch {
+	if {[llength $opt::systemencodings] > 1} {
+	    command "Zmìna kó~dování" changeEncoding
+	}
+    }
+    separator
+    command "~Konec" exitApp Alt+F4
+}
+cascade "K~orpus" {
+    command "Souhrnné ~informace" corpusInfo Ctl+I
+    command "~Statistiky" miscoreWindow
+    command "Vytvoøení sub~korpusu" subcorpWindow
+    command "S~mazání subkorpusu" deletesubcorpWindow
+    command "Seznam s~lov" wordlistWindow
+    command "Implicitní ~Atribut" defaultattrWindow
+}
+cascade "~Dotaz" {
+    command "~Vyhodnocení" processQuery
+    command "Seznam pojmenovaných ~dotazù ..." listNamedWindow
+    command "Seznam ~pøedloh ..." listTemplateWindow
+    command "~Grafické vytváøení ..." {::graph::graphWindow $corp::qrgraph}
+    separator
+    command "Vytvoøení pøedlohy ..." addTemplateWindow
+    command "Import pøedloh ..." loadnewTemplates
+    command "Export pøedloh ..." exportTemplates
+    command "Import pojmenovaných dotazù ..." loadnewNamedQueries
+    command "Export pojmenovaných dotazù ..." exportNamedQueries
+}
+cascade "~Konkordance" {
+    command "Sou~hrn" concinfo_detail
+    command "~Ulo¾ení ..." saveToFile F2
+    command "~Tisk ..." print
+    separator
+    command "Smazání ~vybraných ..." deleteSelected
+    command "~Redukce ..." reduceWindow
+    command "~Jednoduché tøídìní ..." sipmlesortWindow Ctl+S
+    command "~Obecné tøídìní ..." gensortWindow Ctl+G
+    command "~Èetnostní tøídìní ..." countsortWindow
+    command "Tøídìní podle s~kupin" linegroupsort
+    cascade "~Statistiky" {
+	command "~Frekvenèní distribuce ..." freqdistWindow Ctl+F
+	command "~Kolokace ..." collocWindow Ctl+L
+	command "~Rozlo¾ení" distribWindow Ctl+D
+	command "~Skupiny" linegroupstatWindow
+    }
+    command "Prohození KWIC a kolokace" swapKWICWindow
+    separator
+    command "~Zpìt k pøedchozí" restore_conc Ctl+Z
+    command "~Vpøed k nádledující" forward_conc Ctl+X
+    command "~Pojmenovat ..." store_named_conc
+    command "Smazání pojmenovaných ..." delete_named_conc_win
+}
+cascade "~Zobrazení" {
+    command "Re~ference ..." refWindow F4
+    command "~Atributy ..." attribWindow F5
+    command "~Struktury ..." tagWindow F6
+    command "~Kontext ..." contextWindow F7
+    command "~Rozsah ..." rangeWindow Ctl+R
+    separator
+    command "O stránku nahoru" listview_add_before Ctl+PgUp
+    command "O stránku dolù" listview_add_after Ctl+PgDn
+    command "Skok ~na øádek" jumpWindow Ctl+J
+    command "~Paralelní text" show_aligned F9
+}
+
+cascade "~Výbìr" {
+    command "~V¹echny" "tlist:selectall .list" {Ctl++ Ctl+KP_Add}
+    command "~®ádné" "tlist:selectno .list" {Ctl+- Ctl+KP_Subtract}
+    command "~Inverze" "tlist:selectinvert .list" {Ctl+* Ctl+KP_Multiply}
+    command "Vlo¾it do ~schránky" "tlist:clipboard .list" Ctl+Insert
+    command "~Detail do schánky" "insertDetailIntoClipboard .detail.list" Ctl+C
+    global tcl_platform
+    if {$tcl_platform(platform) == "unix"} {
+	command "Pøedat CEDu" "tlist:exportced .list"
+    }
+}
+cascade "~Nápovìda" {
+    command "O ~aplikaci" aboutWin
+    command "Ujednání" showLicense
+    check "Zobrazení ~vysvìtlivek" opt::bhelpenabled
+    command "~Dokumentace" runDocumentation
+}

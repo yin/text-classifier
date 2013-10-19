@@ -1,0 +1,16 @@
+#------------------------------------------------------------
+#
+# Korpus  : $corpus
+# Popis   : $label
+# Dotaz   : $query   
+# Expanze : $expanded
+# Kroky:
+# $steps
+#
+# Velikost: $resultlen
+# Kontext : vlevo $leftcontext, vpravo $rightcontext
+#
+# U¾ivatel: $user
+# Datum   : $date
+#
+#------------------------------------------------------------

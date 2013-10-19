@@ -1,0 +1,111 @@
+!  bonito:
+! 	$Id: resource,v 1.27 2003/10/02 08:42:31 pary Exp $	
+!
+!  Copyright (c) 2000-2003  Pavel Rychly
+
+
+!
+! General Settings
+!
+*options.language:	slovak
+*options.libdir:	~/.bonito
+*options.inetserver:	1
+*options.servername:	korpus.juls.savba.sk
+*options.serverport:	5016
+*options.servercommand:	manateesrv "manatee"
+*options.outencodings:	ascii iso8859-1 utf-8 -
+*options.printer:	|lpr
+*options.showlincese:	0
+*options.availlanguages:	slovak english czech
+
+*options.templatefile:	template.tpl
+*options.historyfile:	history.qry
+*options.historysize:	200
+*options.namedquerfile:	named.qry
+*options.addlines:	20
+*options.optionsfile:	options
+
+*options.systemencodings:	
+*options.subcorpdir:	subcorp/
+
+!
+! User Options -- default values
+!
+*options.displaylines:	100
+*options.bhelpenabled:	1
+*options.bhelpdelay:	500
+*options.runbrowser:	netscape
+*options.undolevels:	5
+*options.defcorp:	
+*options.defctx:	0
+*options.defrange:	50
+*options.batchlines:	20
+*options.savegeometry:	0
+
+
+
+*options.setoptions: 	{bhelpenabled checkbutton} runbrowser undolevels historysize addlines batchlines {inetserver checkbutton} servername serverport servercommand defcorp defctx defrange {savegeometry checkbutton} systemencodings
+
+*options.alloptions:	libdir language inetserver servername serverport servercommand showlincese printer runbrowser bhelpenabled bhelpdelay namedmenupath rebuildmenupath addlines batchlines undolevels historysize historyfile templatefile templateext namedquerfile namedquerext optionsfile setoptions substcaron defcorp defctx defrange availlanguages outencodings savegeometry savedgeometry docstartname dateformat subcorpdir systemencodings
+
+
+*Font:		Helvetica 14
+
+!
+! Result window (KWIC)
+!
+*list.font:			Times 14
+*list.col0-font:		Times 14 bold
+*list.attr-font:		Times 11
+
+! select -- selection
+*list.select-background:	lightblue
+! curr -- line cursor
+*list.curr-borderwidth:		1
+*list.curr-relief: 		raised
+! coll -- collocation
+*list.coll-foreground:		red
+! attr -- possitional attributes other than word
+*list.attr-offset:		-3
+! strc -- structural tags
+*list.strc-foreground:		darkgreen
+! grp -- line group
+*list.grp-foreground:		blue
+
+*list.height:			15
+*detail.list.height:		4
+
+!
+! Connection
+!
+*login.ehost.width:	20
+*login.ecommand.width:	20
+*login.euser.width:	20
+*login.epasswd.width:	20
+*loginerr.err.justify:	left
+
+!
+!  Statistics
+!
+*freqres*table.tabs:	100 200 300 400 500 600
+*freqres*table.width:	50
+*collres*table.tabs:	150 n 250 n 350 n 450 n 550 n 650 n
+*collres*table.width:	70
+*distrib.can.width:	600
+*distrib.can.height:	200
+
+
+!
+! Queries
+!
+*listtmpl*list.width:	20
+*listtmpl*list.height:	10
+*listoft*list.width:	30
+*listoft*list.height:	10
+
+! Combobox pop-up window
+*cbpopup.list.height:	15
+
+
+! Version
+*aboutwin.version:	1.49

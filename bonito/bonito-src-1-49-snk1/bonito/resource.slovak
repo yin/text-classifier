@@ -1,0 +1,573 @@
+!  bonito:
+! 	$Id: resource.czech.il2,v 1.51 2003/12/08 09:49:38 pary Exp $
+!	resource.slovak
+!
+!  Copyright (c) 2000-2003  Pavel Rychly, slovak menu 2007 Maria Simkova
+
+
+!
+! Systémové záležitosti
+!
+*options.templateext:	{{Súbory predlôh} *.tpl} {{Všetky súbory} *}
+*options.namedquerext:	{{Súbory hľadaní} *.qry} {{Všetky súbory} *}
+*options.namedmenupath:	Konkordancie Pomenované
+*options.rebuildmenupath:	Korpus "~Znovu vytvoriť"
+*options.dateformat:	%d.%m.%Y %H:%M
+*options.outencodings:	cp1250 iso8859-2 kam macCentEuro utf-8 ascii
+*options.docstartname:	bonito-cz.html
+
+!
+! Často používané reťazce
+!
+*genstring.chars:	Znakov
+*genstring.tokens:	Pozícií
+*genstring.notshowed:	(nezobrazené riadky)
+*genstring.ncolloc:	%i. kol.
+*genstring.kwic:	KWIC
+*genstring.numofhits:	Počet výskytov:
+*ok.text:	Dobre
+*close.text:	Zavrieť
+*save.text:	Uložiť
+
+
+!
+! Užívateľské nastavenie
+!
+*setopt.title:			Nastavenie
+*setopt.label.text:		Užívateľské nastavenie
+*setopt.apply.text:		Použiť
+*setopt.save.text:		Uložiť
+*setopt.close.text:		Zrušiť
+*setopt.bhelpenabled.text:	Zobrazovanie vysvetliviek
+*setopt.runbrowserlbl.text:	Príkaz na spustenie prehliadača (s pomocníkom)
+*setopt.undolevelslbl.text:	Maximálny počet krokov späť
+*setopt.undolevels.width:	4
+*setopt.historysizelbl.text:	Počet hľadaní v histórii
+*setopt.historysize.width:	4
+*setopt.addlineslbl.text:	Počet "nových" riadkov pri posune o stranu
+*setopt.addlines.width:		4
+*setopt.batchlineslbl.text:	Počet naraz načítaných riadkov pri zobrazovaní
+*setopt.batchlines.width:	4
+*setopt.inetserver.text:	Pripojiť na internetový server
+*setopt.servernamelbl.text:	Adresa prihlasovacieho servera
+*setopt.serverportlbl.text:	Číslo portu na serveri
+*setopt.servercommandlbl.text:	Príkaz na spustenie servera lokálne
+*setopt.defcorplbl.text:	Východiskový korpus
+*setopt.defctxlbl.text:		Východisková veľkosť kontextu
+*setopt.defctx.width:		4
+*setopt.defrangelbl.text:	Východiskový rozsah zobrazenia
+*setopt.defrange.width:		6
+*setopt.savegeometry.text:	Ukladať veľkosť a pozíciu okien
+*setopt.systemencodingslbl.text:	Kódovanie rôznych klávesníc
+
+
+*chlang.title:		Zmena jazyka
+*chlang.label.text:	Jazyk užívateľského rozhrania
+*chlang.newlbl.text:	Použiť jazyk:
+*chlang.lang.width:	15
+
+
+
+!
+! Popisky a vzhľad okien
+!
+
+
+*lstfr.aup.bhelp:		O stranu vyššie
+*lstfr.adown.bhelp:		O stranu nižšie
+
+
+!
+! Hlavné okno
+!
+*status.query:		Hľadá sa ...
+*status.error:		Prerušené
+*status.notfound:	Nenájdené
+*status.found:		Zobrazené:
+*status.all:		všetko
+*status.selected:	Vybrané:
+*status.position:	Riadok:
+*status.queryerror:	Chyba v zadaní
+*status.rebuild:	Vytváram korpus ...
+*queryfr.qrname.text:	meno:
+*queryfr.select.conc:	Nové hľadanie
+*queryfr.select.coll:	%i. kolokácia
+*queryfr.select.pfil:	P filter
+*queryfr.select.nfil:	N filter
+*queryfr.type.width:	11
+*queryfr.type.bhelp:	Typ hľadania
+*queryfr.query.bhelp:	Vlastné hľadanie
+*queryfr.qrlabel.bhelp:	Voliteľné meno hľadania
+*queryfr.qrlabel.entry.width:	15
+*corplist.bhelp:	Meno korpusu
+*collrange.first.text:		Prvý
+*collrange.last.text:		Posledný
+*collrange.coll.text:		Výskyt:
+*collrange.left.lbl.text:	Od
+*collrange.right.lbl.text:	Do
+*collrange*fromlbl.text:	od
+*collrange.index.bhelp:		Koľký výskyt v intervale je kolokácia
+
+
+
+
+!
+! Intervaly pozícií
+!
+*left.bhelp:		Ľavá hranica intervalu
+*right.bhelp:		Pravá hranica intervalu
+*left.count.bhelp:	Počet jednotiek
+*left.unit.bhelp:	Jednotka
+*left.from.bhelp:	Odkiaľ počítať jednotky
+*right.count.bhelp:	Počet jednotiek
+*right.unit.bhelp:	Jednotka
+*right.from.bhelp:	Odkiaľ počítať jednotky
+
+
+!
+! dialógové okná
+!
+
+*attrwin.noattrib:	Vybraný korpus má iba atribút `word'!
+*attrwin.title:		Atribúty
+*attrwin.label.text:	Zobraziť atribúty
+*attrwin.forall.text:	Pre všetky pozície
+*attrwin.kwiconly.text:	Iba v KWIC
+*tagwin.title:		Značky
+*tagwin.label.text:	Zobraziť značky
+*refwin.title:		Referencie
+*refwin.label.text:	Zobraziť referencie
+*refwin.positions.text: číslo pozície
+*ctxwin.title:		Kontext
+*ctxwin.label.text:	Zobraziť kontext
+*leftlbl.text:		Vľavo:
+*leftunit.width:	8
+*rightlbl.text:		Vpravo:
+*rightunit.width:	8
+
+*octxwin.title:			Kontext
+*octxwin.label.text:		Kontext na výstup
+
+*rngwin.title:		Rozsah
+*rngwin.label.text:	Riadky výsledku, ktoré sa zobrazujú
+*rngwin.rngfrom.width:	13
+*rngwin.first:		Prvých
+*rngwin.last:		Posledných
+*rngwin.center:		Prostredných
+*rngwin.random:		Náhodných
+!*rngwin.xxx:		Rovnomerných
+*jumpwin.title:		Skok na riadok
+*jumpwin.label.text:	Riadok výsledku, od ktorého zobrazovať
+*jumpwin.linelbl.text:	Riadok:
+
+
+
+!
+! Pripojenie
+!
+*login.title:		Login
+*login.label.text:	Pripojenie na server
+*login.internet.text:	Pripojiť cez internet
+*login.localcmd.text:	Spustiť lokálne
+*login.host.text:	Adresa servera:
+*login.command.text:	Príkaz serveru:
+*login.user.text:	Užívateľ:
+*login.passwd.text:	Heslo:
+
+
+*loginerr.title:		Login
+*loginerr.label.text:		Chyba pri pripojení na server.
+*loginerr.err_nocfg:		Na serveri sa nedá otvoriť konfiguračný súbor.
+*loginerr.err_nouser:		Neznámy užívateľ.
+*loginerr.err_badpasswd:	Nesprávne heslo.
+*loginerr.err_badhost:		Pripájate sa z nesprávneho počítača.
+*loginerr.err_internal:		Nemožno nadviazať spojenie
+
+*chpasswd.title:		Zmena hesla
+*chpasswd.label.text:		Zmena prístupového hesla
+*chpasswd.old.lbl.text:		Súčasné heslo:
+*chpasswd.new.lbl.text:		Nové heslo:
+*chpasswd.retype.lbl.text:	Overenie nového hesla:
+*chpasswd.diffpass:		Druhý raz zadané heslo sa líši od prvého.
+*chpasswd.changed:		Heslo úspešne zmenené.
+*chpasswd.error:		Pri zmene hesla došlo k chybe. Heslo nezmenené.
+
+!
+! About
+!
+*aboutwin.title:	O aplikácii
+*aboutwin.label.text:	O aplikácii
+*aboutwin.bonito.text:	Bonito -- grafické užívateľské rozhranie systému Manatee
+*aboutwin.ver.text:	Verzia
+*aboutwin.message:	\nCopyright (c) 1998 -- 2003 Pavel Rychlý
+
+*licensewin.title:	Podmienky
+*licensewin.label.text:	Licenčné podmienky
+*licensewin.message:	Bonito a celý systém Manatee budem\npoužívať podľa podmienok uvedených\nna adrese www.textforge.cz/license.html
+*licensewin.msg.justify:	left
+*licensewin*ok.text:	Súhlasím
+
+!
+! Súhrnné informácie
+!
+*corpinfo.title:		Súhrnné informácie
+*corpinfo.label.text:		Korpus:
+*corpinfo.errconf.text:		Korpus neexistuje alebo má zlú konfiguráciu!
+*corpinfo.name.foreground:	blue
+*corpinfo.sizelbl.text:		Počet pozícií: 
+*corpinfo.ssizelbl.text:	Veľkosť subkorpusu:
+*corpinfo.attrlbl.text:		Pozičné atribúty
+*corpinfo.attrlbl.foreground:	blue
+*corpinfo.taglbl.text:		Štruktúrne značky
+*corpinfo.taglbl.foreground:	blue
+*corpinfo.statistics:		types numbers
+*corpinfo.types.text:		Veľkosť: 
+*corpinfo.numbers.text:		Počet čísel: 
+
+*defattrwin.title:	Implicitný atribút
+*defattrwin.label.text:	Implicitný atribút pre hľadania
+
+!
+! Subcorpora
+!
+*subcwin.title:		Podkorpus
+*subcwin.label.text:	Vytvorenie podkorpusu
+*subcwin.baselbl.text:	Základný korpus:
+*subcwin.namelbl.text:		Meno podkorpusu:
+*subcwin.structlbl.text:	Značka:
+*subcwin.querylbl.text:		Podmienka:
+
+*delsubc.title:		Podkorpusy
+*delsubc.label.text:	Zmazanie podkorpusu
+*delsubc.ok.text:	Zmazať
+
+!
+! Pomenované konkordancie
+!
+*namedconc.title:	Pomenovanie konkordancie
+*namedconc.label.text:	Pomenovanie a odloženie konkordancie
+*namedconc.nlbl.text:	Meno konkordancie:
+*delnamedconc.title:		Pomenovanie konkordancie
+*delnamedconc.label.text:	Zmazanie pomenovanej konkordancie
+*delnamedconc.ok.text:		Zmazať
+
+*concinfo.title:	Súhrn o konkordancii
+*concinfo.label.text:	Súhrn o konkordancii
+
+*swapkwic.title:	Prehodiť KWIC a kolokáciu
+*swapkwic.label.text:	Ktorá kolokácia sa má prehodiť s KWIC?
+*swapkwic.ok.text:	Prehodiť
+
+!
+! Triedenie
+!
+*status.sort:		Prebieha triedenie ...
+
+*simplesort.title:		Triedenie
+*simplesort.label.text:		Jednoduché triedenie
+*simplesort.sortlbl.text:	Triediaci kľúč:
+*simplesort.poslbl.text:	Počet triedených pozícií:
+*simplesort.beforebeg.text:	Ľavý kontext
+*simplesort.afterbeg.text:	KWIC zľava
+*simplesort.beforeend.text:	KWIC sprava
+*simplesort.afterend.text:	Pravý kontext
+*simplesort.attrib.width:	8
+*simplesort.ascdesc.width:	10
+*simplesort.ascending:		vzostupne
+*simplesort.descending:		zostupne
+*simplesort.ignorecase.text:	Ignorovať veľkosť
+*simplesort.retrograde.text:	Retrográdne
+*simplesort.attrlbl.text:	Atribút:
+
+
+*gensort.title: 	Triedenie
+*gensort.label.text:	Univerzálne triedenie
+*gensort.add.text:	Pridať
+*gensort.delete.text:	Zmazať
+*gensort.uniq.text:	Vynechať duplicity
+*gensort*left.lbl.text:		Triediť pozície
+*gensort*left.bhelp:		
+*gensort*left.count.bhelp:	Počet pozícií
+*gensort*left.from.bhelp:	Odkiaľ počítať
+*gensort*right.lbl.text:	Do
+*gensort*attr.bhelp:		Triedený atribút
+*gensort*asc.bhelp:		Vzostupne/Zostupne
+*gensort*icase.text:		AaAa
+*gensort*icase.bhelp:		Ignorovať veľkosť
+*gensort*rtgr.text:		udazdO
+*gensort*rtgr.bhelp:		Triediť retrográdne
+*gensort*fromlbl.text:		od
+
+*countsort.title: 		Frekvenčné triedenie
+*countsort.label.text:		Triedenie podľa frekvencií v kontexte
+*countsort.attrlbl.text:	Atribút:
+*countsort.ctxlbl.text:		Kontext:
+
+!
+! Frekvenčná distribúcia
+!
+*status.freqdist:	Počítajú sa frekvencie ...
+
+*freqdist.title: 	Frekvenčná distribúcia
+*freqdist.label.text:	Zadanie frekvenčnej distribúcie
+*freqdist.limlbl.text:	Limit:
+*freqdist.add.text:	Pridať
+*freqdist.delete.text:	Zmazať
+*freqdist*attrlbl.text:		Atribút:
+*freqdist*left.lbl.text:	Pozícia 
+*freqdist*left.bhelp:		
+*freqdist*left.count.bhelp:	Počet pozícií
+*freqdist*right.lbl.text:	Do
+*freqdist*fromlbl.text:		od
+*freqdist*icase.text:		Ignorovať veľkosť
+
+*freqres.title: 		Frekvenčná distribúcia
+*freqres.label.text:		Výsledok frekvenčnej distribúcie
+*freqres.limlbl.text:		Limit:
+*freqres.showlines.text:	Riadky na zobrazenie:
+*freqres*show.text:	zobraziť
+*freqres*sum.text:	súčet
+*freqres*hide.text:	schovať
+
+
+!
+! Redukcia
+!
+*status.reduce:		Prebieha redukcia ...
+*reduce.title:		Redukcia
+*reduce.label.text:	Redukcia počtu riadkov
+*reduce.reducelbl.text:	V konkordančnom zozname nechať
+*reduce.rngfrom.width:	13
+*reduce.first:		Prvých
+*reduce.last:		Posledných
+*reduce.center:		Prostredných
+*reduce.random:		Náhodných
+*reduce.unit.width:	8
+*reduce.percent:	percent
+*reduce.100percent:	1/100 percent
+*reduce.lines:		riadkov
+
+*status.delete:		Prebieha mazanie ...
+*delselect.title:	Zmazanie vybraných
+*delselect.label.text:	Naozaj zmazať vybrané riadky?
+*delselect.ok.text:	Áno
+*delselect.close.text:	Nie
+
+!
+! Štatistiky
+!
+*tscore.title:		T-score
+*tscore.label.text:	T-score
+*tscore.attrlbl.text:	Atribút:
+*tscore.vallbl.text:	Hodnota:
+*tscore.attrib.width:	8
+*tscore.result.foreground:	blue
+*tscore.ok.text:	Vyhodnotiť
+
+*miscore.title:			Štatistiky
+*miscore.label.text:		Štatistiky korpusu
+*miscore.attr1lbl.text:		Atribút1:
+*miscore.val1lbl.text:		Hodnota1:
+*miscore.attrib1.width:		8
+*miscore.attr2lbl.text:		Atribút2:
+*miscore.val2lbl.text:		Hodnota2:
+*miscore.attrib2.width:		8
+*miscore.windowlbl.text:	Okno:
+*miscore.result.foreground:	blue
+*miscore.ok.text:		Vyhodnotiť
+*miscore.fromlbl.text:		Vzdialené od seba od:
+*miscore.tolbl.text:		do:
+*miscore.asregexp.text:		Vyhodnocovať ako regulárne výrazy
+*status.bigrams:		Prebieha výpočet bigramov ...
+
+*collwin.title:		Najfrekventovanejšie kolokácie
+*collwin.label.text:	Výpočet najfrekventovanejších kolokácií
+*collwin.attrlbl.text:	Atribút:
+*collwin.fromlbl.text:	V rozsahu od:
+*collwin.tolbl.text:	do:
+*collwin.freqlbl.text:	Minimálny výskyt v korpuse:
+*collwin.bgrlbl.text:	Minimálny výskyt v danom rozsahu:
+*collwin.lineslbl.text:	Maximálny počet zobrazených riadkov:
+*collwin.sortlbl.text:	Zoradiť podľa frekvencie:
+*collwin.sortabs.text:	absolútnej
+*collwin.sortrel.text:	relatívnej
+
+*status.colloc:		Prebieha výpočet kolokácií ...
+*collres.title:		Najčastejšie kolokácie
+*collres.label.text:	Vypočítané najčastejšie kolokácie
+*collres.headline:	MI-score T-score {Rel. f [%]} {Abs. f}
+
+*distrib.title:		Rozloženie
+*distrib.label.text:	Rozloženie výskytov v korpuse
+*distrib.freq.text:	Frekvencia (počet výskytov):
+*distrib.rfreq.text:	ARF:
+*distrib.fval.foreground:	blue
+*distrib.rfval.foreground:	blue
+*distrib.xlbl:		Pozícia v korpuse
+*distrib.ylbl:		Počet výskytov
+*distrib.ywidth:	60
+*distrib.xwidth:	200
+
+*lngrpstat.title:	Skupiny riadkov
+*lngrpstat.label.text:	Frekvencie skupín riadkov
+*lngrpstat.delete.text:		Zmazať označené skupiny
+*lngrpstat.list.0.lbl.text:	Skupina
+*lngrpstat.list.1.lbl.text:	Frekvencia
+
+
+!
+! Výstup (tlač/súbor)
+!
+*status.export:			Prebieha export ...
+*writefile.title:		Zápis do súboru
+*writefile.label.text:		Zápis do súboru
+*writefile.enclbl.text:		Kódovanie
+*writefile.encoding.width:	5
+*writefile.headlbl.text:	Hlavička
+*writefile.header.width:	10
+!*writefile.selected.text:	iba vybrané riadky
+*writefile.selected.text:	zobrazené riadky
+*writefile.alllines.text:	všetky riadky
+*writefile.linenumbers.text:	číslovať riadky
+*writefile.alignkwic.text:	zarovnať KWIC
+*writefile.ok.text:		Uložiť
+*writefile.chctx.text:		Kontext
+*writefile.filelbl.text:	Do súboru:
+*writefile.hdrs.full:		úplná
+*writefile.hdrs.none:		žiadna
+*writefile.hdrs.simple:		jednoduchá
+
+*print.title:		Tlač
+*print.label.text:	Tlač výsledku
+*print.enclbl.text:	Kódovanie
+*print.encoding.width:	5
+*print.headlbl.text:	Hlavička
+*print.header.width:	10
+!*print.selected.text:	iba vybrané riadky
+*print.selected.text:	zobrazené riadky
+*print.alllines.text:	všetky riadky
+*print.linenumbers.text:	číslovať riadky
+*print.alignkwic.text:	zarovnať KWIC
+*print.ok.text:		Vytlačiť
+*print.chctx.text:	Kontext
+
+*toomuchlines.title:	Chybné zadanie
+*toomuchlines.msg:	Vybraných riadkov je príliš veľa!
+
+!
+! Predlohy
+!
+*addtmpl.title:		Predloha
+*addtmpl.label.text:	Pridanie predlohy
+*addtmpl.namelbl.text:	Meno
+*addtmpl.strlbl.text:	Predloha
+*addtmpl.notelbl.text:	Popis
+
+*listtmpl.title:	Predlohy
+*listtmpl.label.text:	Zoznam predlôh
+*listtmpl.ok.text:	Pridať
+*listtmpl.delete.text:	Zmazať
+*listtmpl.strlbl.text:	Predloha
+*listtmpl.notelbl.text:	Popis
+
+*errtmpl.title:		Chyba pri substitúcii predlohy
+*errtmpl.parnum:	Chybný počet parametrov
+*errtmpl.subst:		Chybná substitúcia
+*errtmpl.unknown:	Neznáma predloha
+
+!
+! Často kladené otázky
+!
+*listoft.title:		Pomenované hľadania
+*listoft.label.text:	Zoznam pomenovaných hľadaní
+*listoft.delete.text:	Zmazať
+
+
+!
+! Grafy pre regulárne výrazy
+!
+*graph.title:		Graf hľadania
+*graph.label.text:	Graf hľadania
+*graph.delete.text:	Zmazať
+*graph.add.text:	Pridať
+*graph.type.seq:	Postupnosť
+*graph.type.opt:	Voliteľne
+*graph.type.rep:	Opakovane
+*graph.type.alt:	Alternatívne
+*graph.type.att:	Atribút
+*graph.type.and:	A zároveň
+*graph.type.or:		Alebo
+*graph.type.not:	Negácia
+*graph.type.any:	Ľubovoľná pozícia
+*graph.typelbl.text:	Nový prvok
+*graph*minlbl.text:	minimálne
+*graph*maxlbl.text:	maximálne
+!*graph*varlbl.text:	hodnota
+*graph.localmenu:	"Iba podstrom" ::graph::cutoff Negácia "::graph::prepend not" Voliteľne "::graph::prepend opt" Opakovane "::graph::prepend rep" Vypustiť ::graph::remove
+
+!
+! Zarovnané texty
+!
+*align.title:		Paralelné texty
+*align.label.text:	Zodpovedajúce si texty v paralelnom korpuse.
+
+!
+! Wordlist
+!
+*wlistwin.title:	Zoznam slov
+*wlistwin.label.text:	Hodnoty atribútu (slova) zodpovedajúce danému vzoru
+*wlistwin.attrlbl.text:		Atribút:
+*wlistwin.patlbl.text:		Vzor:
+*wlistwin.pattern.width:	20
+*wlistwin.icase.text:		Ignorovať veľkosť
+*wlistwin.freqlbl.text:		Minimálny výskyt v korpuse
+*wlistwin.lineslbl.text:	Maximálny počet zobrazených riadkov
+*wlistwin.addtolist.text:	Pridať do zoznamu
+*wlistwin.newlist.text:		Nový zoznam
+*wlistwin.ok.text:		Nájdi vzor
+*wlistwin.conc.text:		Vytvor konkordanciu
+*wlistwin.status.text:		Riadkov: %i    Vybrané: %i    Súčet: %i
+*wlistwin.res.0.box.width:	30
+*wlistwin.res.1.box.width:	8
+*wlistwin.res.1.lbl.text:	frekvencia
+
+! Corpus Rebuild
+*rebuild.title:		Znovuvytvorenie korpusu
+*rebuild.label.text:	Vytváram korpus, môže to chvíľu trvať ...
+
+
+! Word Sketches
+*wsketch.title:		Word Sketch
+*wsketch.label.text:	Word Sketch
+*wsketch.wordlbl.text:	Word
+*wsketch.minfreqlbl.text:	Min frequency
+*wsketch.maxitemslbl.text:	Max number of items
+*wsketch.ok.text:	Show Word Sketch
+*wsketch.conc.text:	Make Concordance
+*wsketch.freq.lbl.text:	Corpus frequency:
+*wsketch.ws*noitems.text:	No items!
+
+
+*wsketchdiff.title:		Word Sketch Differences
+*wsketchdiff.label.width:	80
+*wsketchdiff.label.text:	Word Sketch Differences
+*wsketchdiff.wordlbl1.text:	Word1
+*wsketchdiff.wordlbl2.text:	Word2
+*wsketchdiff.minfreqlbl.text:	Min frequency
+*wsketchdiff.maxitemslbl.text:	Max number of items
+*wsketchdiff.ok.text:	Show Difference
+*wsketchdiff.conc.text:	Make Concordance
+*wsketchdiff.freq.lbl.text:	Corpus frequency:
+*wsketchdiff.ws*noitems.text:	No items!
+
+*theswin.title:		Thesaurus
+*theswin.label.text:	Contextually similar words
+*theswin.wordlbl.text:	Word
+*theswin.maxitemslbl.text:	Max number of items
+*theswin.ok.text:	Show similar words
+*theswin.thes.0.box.selectMode:	browse
+*theswin.thes.1.box.selectMode:	browse
+*theswin.thes.0.box.width:	30
+*theswin.thes.0.lbl.text:	Word
+*theswin.thes.1.box.width:	10
+*theswin.thes.1.lbl.text:	Score
