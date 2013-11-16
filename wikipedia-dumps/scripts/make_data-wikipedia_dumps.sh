@@ -57,3 +57,19 @@ else
 	echo "... already textized - $wikiout_dir present."
 fi
 
+if [ -d $wikiout_dir ] && [ "$mt" == false ]; then
+	if [ ! -d $wikimegadoc_dir ]; then
+		echo 'building megadoc'
+		mkdir -p $wikimegadoc_dir
+		echo "find $wikiout_dir -type f -exec cat '{}' ';' | awk \
+			'/<\\/doc>/{printf \"\\n\"} !/^</{printf \"%s \",$0}' \
+			> $wikimegadoc_dir/megadoc"
+		find $wikiout_dir -type f -exec cat '{}' ';' | awk \
+			'/<\/doc>/{printf "\n"} !/^</{printf "%s ",$0}' \
+			> $wikimegadoc_dir/megadoc 
+	else
+		echo "... the Wikipedia MegaDocument is already built."
+	fi
+fi
+
+
