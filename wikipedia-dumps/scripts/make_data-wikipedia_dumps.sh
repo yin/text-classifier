@@ -21,8 +21,7 @@ accent_remover="nodejs tools/accent_remover.js"
 
 mt=false
 
-# Download source
-if [ ! -f $source_bz2 ]; then
+download() {
 	mkdir -p $source_bz2_dir
 	wget_opts=""
 	if [ -w $source_bz2 ]; then
@@ -30,20 +29,34 @@ if [ ! -f $source_bz2 ]; then
 	fi
 	wget $source_bz2_url \
 		$wget_opts -O $source_bz2
+}
+
+unpack() {
+  echo unpacking
+  mkdir $source_file_dir
+  bzcat $source_bz2 > $source_file
+}
+
+# Download source
+if [ ! -f $source_bz2 ]; then
+  download
 else
-	echo "... the wikipedia pack is already downloaded."
+  echo "... the wikipedia pack is already downloaded."
 fi
 
 # Preprocess
 if [ -f $source_bz2 ]; then
 	if [ ! -f $source_file ]; then
-		echo unpacking
-		mkdir $source_file_dir
-		bzcat $source_bz2 > $source_file
+            unpack
 	else
-		echo "... already unpacked"
+	    echo "... already unpacked"
 	fi
 fi
+
+echo TODO Following parts work, but should be refactored into functions
+exit 0
+
+## TODO(yin): This needs review
 
 # For my XML-wellformness imune MT wikiextractor, I need to split the BIG XML. 
 if [ -f $source_file ] && [ "$mt" == true ]; then
