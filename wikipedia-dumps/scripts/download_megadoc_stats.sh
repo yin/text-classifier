@@ -4,8 +4,9 @@
 # This script downloads wikipedia dump, prepares the megadoc and makes some stats
 #
 
-. config.sh
-. lib_prepare()
+base=$(dirname $0)
+. $base/config.sh
+. $base/lib_prepare.sh
 
 if [ ! -f $source_bz2 ]; then
   download
